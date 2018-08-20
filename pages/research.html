@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 	</head>
 	
-	<body>
+	<body class="redBackground">
 	
 		<!-- Mobile Navigation Bar -->	
 		<div class="d-md-none justify-content-end fixed-top p-2 redBackground" style="display:flex;" id="navBar">
@@ -31,7 +31,7 @@
 			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
 				<a class="menuItem pb-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
-				<a class="menuItem py-1" href="../pages/research.html"><b>Research</b></a>
+				<a class="menuSelected py-1" href="../pages/research.html">Research</a>
 				<a class="menuItem py-1" href="../pages/media.html">Media</a>
 				<a class="menuItem py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
 				<a class="menuItem pt-1" href="../pages/contact.html">Contact</a>
@@ -39,7 +39,7 @@
 		</div>	
 				
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 redBackground mobileHeader">
+		<div class="d-md-none p-3 redBackground mobileHeader" id="mobileHeader">
 			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
 				
 				<div class="d-flex justify-content-center pt-4">
@@ -66,9 +66,9 @@
 				
 				<div class="d-flex justify-content-center py-2">
 					<div class="socialMediaButtons">
-						<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 					</div>
 				</div>	
 			</div>
@@ -86,7 +86,7 @@
 								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
 									<a class="menuItem flex-fill-lg " href="publications.html">Publications</a>
 									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
-									<a class="menuItem flex-fill-lg" href="research.html"><b>Research</b></a>
+									<a class="menuSelected flex-fill-lg" href="research.html">Research</a>
 									<a class="menuItem flex-fill-lg" href="media.html">Media</a>
 									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
 									<a class="menuItem flex-fill-lg" href="contact.html">Contact</a>
@@ -119,9 +119,9 @@
 							
 						<div class="d-flex justify-content-center pb-2">
 							<div class="socialMediaButtons ">
-								<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 							</div>	
 						</div>								
 					</div>
@@ -130,7 +130,7 @@
 		</div>		
 
 		<!-- Right-hand Content -->			
-		<div class="container-fluid p-0">
+		<div class="container-fluid p-0" id="contentContainer">
 			<div class="row w-100 px-0 mx-0">
 				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">		
 
@@ -148,7 +148,7 @@
 								social and political dimensions of the ethics of PrEP for HIV prevention among men who have
 								sex with men (MSM). I have presented on this research at the <a href="https://www.acpcpa.ca/cpages/home-page" target="_blank" class="red">Canadian Philosophical Association</a> 
 								conference in 2016, the <a href="https://www.bioethics.ca/" target="_blank" class="red">Canadian Bioethics Society</a> conference in 2017 and 2018,
-								the Community Based Research Centre conference in 2017 and the <a href="https://www.cahr-acrv.ca/" target="_blank" class="red">Canadian Association for HIV Research</a> conference in 2018.
+								the <a href="http://cbrc.net/" target="_blank" class="red">Community Based Research Centre</a> conference in 2017 and the <a href="https://www.cahr-acrv.ca/" target="_blank" class="red">Canadian Association for HIV Research</a> conference in 2018.
 							</p>
 								
 							<div class="rotateIcon mt-2">
@@ -209,21 +209,7 @@
 								My research on climate change is the topic of my secondary research project. I am focusing on
 								acknowledging and challenging anthropocentrism in the ethics of climate change. I presented
 								on this research at the <a href="https://www.acpcpa.ca/cpages/home-page" target="_blank" class="red">Canadian Philosophical Association</a> conference in 2018.
-							</p>
-									
-							<div class="rotateIcon mt-2">
-								<a class="collapsed" data-toggle="collapse" href="#climateResearch" aria-expanded="true" aria-controls="climateResearch" style="text-decoration:none; color:black;">
-									<i class="fas fa-angle-down mr-2 red" style=" font-size:1.5em; position:relative; top:5px;"></i>More
-								</a>
-
-								<div id="climateResearch" class="collapse">
-									<div class="card card-body mt-3">
-										<p>
-											I presented on this research at the Canadian Philosophical Association conference in 2018.
-										</p>
-									</div>
-								</div>
-							</div>		
+							</p>	
 						</div>
 					</div>
 
@@ -242,24 +228,11 @@
 					<div class="row pb-5">
 						<div class="col-md-12">			
 							<p>
-								My research on non-human animal rights is the topic of another research project. I am focusing
-								on anthropocentrism, speciesism and the effect of the uncanny valley problem in the ethics of
-								non-human animal rights. I presented on this research at the <a href="http://philosophy.gradstudies.yorku.ca/" target="_blank" class="red">York University Graduate Philosophy</a> conference in 2016.
-							</p>
-									
-							<div class="rotateIcon mt-2">
-								<a class="collapsed" data-toggle="collapse" href="#nonHumanRightsResearch" aria-expanded="true" aria-controls="nonHumanRightsResearch" style="text-decoration:none; color:black;">
-									<i class="fas fa-angle-down mr-2 red" style=" font-size:1.5em; position:relative; top:5px;"></i>More
-								</a>
-
-								<div id="nonHumanRightsResearch" class="collapse">
-									<div class="card card-body mt-3">
-										<p>
-											I presented on this research at the York University Graduate Philosophy conference in 2016.
-										</p>
-									</div>
-								</div>
-							</div>									
+								My research on non-human animal rights is the topic of another research project. 
+								I am focusing  on anthropocentrism, speciesism and the effect of the uncanny valley 
+								problem on the ethics of non-human animal rights. I presented on this research at 
+								the <a href="http://philosophy.gradstudies.yorku.ca/" target="_blank" class="red"> York University Graduate Philosophy</a> conference in 2016.
+							</p>								
 						</div>
 					</div>	
 					

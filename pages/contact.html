@@ -12,10 +12,10 @@
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 	</head>
 	
-	<body>
+	<body style="background-color: #fffcf6;">
 	
 		<!-- Mobile Navigation Bar -->
-		<div class="d-md-none justify-content-end fixed-top p-2 purpleBackground" style="display:flex;" id="navBar">
+		<div class="d-md-none justify-content-end fixed-top p-2" style="background-color:#fffcf6; display:flex;" id="navBar">
 			<div class="mr-auto pl-2">
 				<a href="../index.html" class="pr-3 logo">Michael Montess</a>
 			</div>
@@ -34,79 +34,83 @@
 				<a class="menuItem py-1" href="../pages/research.html">Research</a>
 				<a class="menuItem py-1" href="../pages/media.html">Media</a>
 				<a class="menuItem py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
-				<a class="menuItem pt-1" href="../pages/contact.html"><b>Contact</b></a>
+				<a class="menuSelected pt-1" href="../pages/contact.html">Contact</a>
 			</div>
 		</div>
 		
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 purpleBackground mobileHeader">
-			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
-				<div></div>
-				
-				<div class="d-flex flex-column align-items-center pt-4" id="header">
-					<div>
-						<h1>Contact</h1>
-					</div>									
+		<div class="d-md-none" style="color: #fffcf6; position:relative; background-image: url(../images/michaelStairs.jpg); background-size:cover;background-position:center; top:50px; z-index: 2;" id="mobileHeader">
+			<div class="p-3" style="background-color: rgba(0, 0, 0, 0.45); width: 100%;">
+				<div class="d-flex flex-column w-100 justify-content-between" style="height: 325px; border: 2px solid #fffcf6;">
+					<div></div>
+					
+					<div class="d-flex flex-column align-items-center pt-4" id="header">
+						<div>
+							<h1>Contact</h1>
+						</div>									
 
-					<div>
-						<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+						<div>
+							<img src="../images/ornamentWhite.png" style="width:100px" alt="Ornament"/>
+						</div>
 					</div>
+					
+					<div class="d-flex justify-content-center py-2">
+						<div class="socialMediaButtons">
+							<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:#fffcf6;"><i class="fab fa-facebook fa-md"></i></a>
+							<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:#fffcf6;"><i class="fab fa-instagram fa-md px-1"></i></a>
+							<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:#fffcf6;"><i class="fab fa-linkedin fa-md"></i></a>
+						</div>
+					</div>	
 				</div>
-				
-				<div class="d-flex justify-content-center py-2">
-					<div class="socialMediaButtons">
-						<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
-					</div>
-				</div>	
-			</div>
-		</div>	
+			</div>	
+		</div>
 		
 		<!-- Left-hand Navigation Header -->
 		<div class="container-fluid p-0">
 			<div class="col-md-6 h-100 px-0 d-none d-md-block position-fixed" style="min-height:500px;">
-				<div class="h-100 p-3 purpleBackground">
-					<div class="mx-auto h-100 d-flex flex-column justify-content-between p-3 menuBorder" style="width: 85%;">	
+				<div class="h-100" style="background-image: url(../images/michaelStairs.jpg); background-size:cover; background-position:center;">
+					<div class="p-3" style=" background-color: rgba(0, 0, 0, 0.45); position: absolute;top: 0;left: 0;width: 100%; height: 100%;">
+					<div class="mx-auto h-100 d-flex flex-column justify-content-between p-3" style="width: 85%; border: 2px solid #fffcf6;">	
 					
 						<div class="d-none d-md-block">
 							<div class="pt-3 d-flex align-items-start">
-								<a href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
+								<a style="color: #fffcf6;" href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
 								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
-									<a class="menuItem flex-fill-lg " href="publications.html">Publications</a>
-									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
-									<a class="menuItem flex-fill-lg" href="research.html">Research</a>
-									<a class="menuItem flex-fill-lg" href="media.html">Media</a>
-									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
-									<a class="menuItem flex-fill-lg" href="contact.html"><b>Contact</b></a>
+									<a style="color: #fffcf6;" class="menuItem flex-fill-lg " href="publications.html">Publications</a>
+									<a style="color: #fffcf6;" class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
+									<a style="color: #fffcf6;" class="menuItem flex-fill-lg" href="research.html">Research</a>
+									<a style="color: #fffcf6;" class="menuItem flex-fill-lg" href="media.html">Media</a>
+									<a style="color: #fffcf6;" style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
+									<a style="color: #fffcf6;" class="menuSelected flex-fill-lg" href="contact.html">Contact</a>
 								</div>
 							</div>
 						</div>
 							
-						<div class="d-flex flex-column align-items-center pb-5">
+						<div class="d-flex flex-column align-items-center pb-5" style="color:#fffcf6;">
 							<div>
 								<h1>Contact</h1>							
 							</div>
 							
 							<div>
-								<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+								<img src="../images/ornamentWhite.png" style="width:100px" alt="Ornament"/>
 							</div>
 						</div>
 						
-						<div class="d-flex justify-content-center pb-2 pt-5">
-							<div class=" socialMediaButtons ">
-								<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="	color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="	color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+							<div class="d-flex justify-content-center pb-2 pt-5">
+								<div class=" socialMediaButtons">
+									<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:#fffcf6;"><i class="fab fa-facebook fa-md"></i></a>
+									<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:#fffcf6;"><i class="fab fa-instagram fa-md px-1"></i></a>
+									<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="	color:#fffcf6;"><i class="fab fa-linkedin fa-md"></i></a>
+								</div>	
 							</div>	
-						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
-			
+		</div>
+		
 		<!-- Right-hand Content -->			
-		<div class="container-fluid p-0">				
+		<div class="container-fluid p-0" id="contentContainer">				
 			<div class="row w-100 px-0 mx-0">				
 				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">
 
@@ -116,7 +120,7 @@
 						</div>
 					</div>
 					
-					<div class="row pb-5">
+					<div class="row pb-5">					
 						<div class="col-lg-12">
 							<p>mmontess@yorku.ca<br>
 							Department of Philosophy<br>
@@ -127,18 +131,6 @@
 							M3J 1P3</p>
 						</div>
 					</div>
-						
-						<!-- <div class="row"> -->
-							<!-- <div class="col-md-12 pt-4 pb-4"> -->
-								<!-- <h2 class="text-center">Affiliations</h2> -->
-							<!-- </div> -->
-						<!-- </div> -->
-						
-						<!-- <div class="row pb-5"> -->
-							<!-- <div class="col-lg-12 text-center py-4"> -->
-								<!-- <div class="d-flex justify-content-center"><a href="http://phil.laps.yorku.ca/" target="_blank"><img src="../images/yorkLogo.png" style="width:310px; height: 100px; " alt="York University Logo"/></a></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
 			
 					<div class="px-0 d-none d-md-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
 

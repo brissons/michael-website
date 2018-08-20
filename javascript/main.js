@@ -14,17 +14,20 @@ $(document).ready(function(){
 	//Hides navigation bar when scrolling down
 	var prev = 0;
 	var difference = 0;
+	var bottomOfHeader = $('#mobileHeader').scrollTop() + $('#mobileHeader').height();
 	
 	$(window).scroll(function() {
-		var topOfScreen = $(window).scrollTop();
+		var topOfScreen = window.scrollY;
 		
-		if(topOfScreen > 375) {
+		if(topOfScreen > bottomOfHeader) {
 			
 			//scroll up
 			if(topOfScreen < prev) {
-				if(difference > 300) {				
-					$("#navBar").fadeIn(200);
-					difference = 0;
+				if(difference > 300) {		
+					if(!$("#navBar").is(":visible") && !$("#navBar").is(':animated')) {
+						$("#navBar").fadeIn(200);
+						difference = 0;
+					}
 				}
 				else {
 					difference += prev-topOfScreen;
@@ -37,7 +40,6 @@ $(document).ready(function(){
 			}
 			
 			prev = topOfScreen;
-			
 		}
 		else {
 			if(!$("#navBar").is(":visible")) {

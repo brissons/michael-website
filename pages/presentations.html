@@ -9,10 +9,10 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
-		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>	
 	</head>
 	
-	<body>
+	<body class="greenBackground">
 	
 		<!-- Mobile Navigation Bar -->	
 		<div class="d-md-none justify-content-end fixed-top p-2 greenBackground" style="display:flex;" id="navBar">
@@ -30,7 +30,7 @@
 		<div class="h-100 w-100 d-md-none position-fixed m-0" id="navBarMenu">
 			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
 				<a class="menuItem pb-1" href="../pages/publications.html">Publications</a>
-				<a class="menuItem py-1" href="../pages/presentations.html"><b>Presentations</b></a>
+				<a class="menuSelected py-1" href="../pages/presentations.html">Presentations</a>
 				<a class="menuItem py-1" href="../pages/research.html">Research</a>
 				<a class="menuItem py-1" href="../pages/media.html">Media</a>
 				<a class="menuItem py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
@@ -39,7 +39,7 @@
 		</div>	
 			
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 greenBackground mobileHeader">
+		<div class="d-md-none p-3 greenBackground mobileHeader" id="mobileHeader">
 			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
 				
 				<div class="d-flex justify-content-center pt-4">
@@ -66,9 +66,9 @@
 								
 				<div class="d-flex justify-content-center py-2">
 					<div class="socialMediaButtons">
-						<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 					</div>
 				</div>	
 			</div>
@@ -85,7 +85,7 @@
 								<a href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
 								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
 									<a class="menuItem flex-fill-lg " href="publications.html">Publications</a>
-									<a class="menuItem flex-fill-lg" href="presentations.html"><b>Presentations</b></a>
+									<a class="menuSelected flex-fill-lg" href="presentations.html">Presentations</a>
 									<a class="menuItem flex-fill-lg" href="research.html">Research</a>
 									<a class="menuItem flex-fill-lg" href="media.html">Media</a>
 									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
@@ -120,9 +120,9 @@
 						
 						<div class="d-flex justify-content-center pb-2">
 							<div class="socialMediaButtons ">
-								<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 							</div>	
 						</div>					
 					</div>
@@ -131,7 +131,7 @@
 		</div>	
 				
 		<!-- Right-hand Content -->				
-		<div class="container-fluid p-0">
+		<div class="container-fluid p-0" id="contentContainer">
 			<div class="row w-100 px-0 mx-0">
 				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">				
 
@@ -240,8 +240,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<p style="font-size: 16px; color:grey;">NOV 2017</p>							
-							<span class="emphasizedText">“Increasing Sexual Freedom for MSM through PrEP”</span> at Community Based
-							Research Centre (CBRC) Conference in Vancouver, British Columbia
+							<span class="emphasizedText">“Increasing Sexual Freedom for MSM through PrEP”</span> at <a href="http://cbrc.net/" target="_blank" class="green">Community Based
+							Research Centre (CBRC)</a> Conference in Vancouver, British Columbia
 									
 							<div class="rotateIcon mt-2">
 								<a class="collapsed" data-toggle="collapse" href="#sexualFreedom" aria-expanded="true" aria-controls="sexualFreedom" style="text-decoration:none; color:black;">
@@ -250,28 +250,26 @@
 
 								<div id="sexualFreedom" class="collapse">
 									<div class="card card-body mt-3">
-										<p>In this presentation, I will explore the ethics of using pre-exposure prophylaxis (PrEP) as HIV
-										prevention for men who have sex with men (MSM). I will focus on the Canadian social, legal and
-										medical context where PrEP was approved in 2016, but I will also draw on information from the
-										American context where PrEP was approved in 2012.</p><br>
+										<p>In this presentation, I explore the ethics of using pre-exposure prophylaxis (PrEP) as HIV prevention 
+										for men who have sex with men (MSM). I focus on the Canadian social, legal and medical context where PrEP 
+										was approved in 2016, but I also draw on information from the American context where PrEP was approved 
+										in 2012.</p><br>
 
-										<p>Although the medical concerns about the
-										ethics of PrEP often take precedence over the social concerns, there is a growing body of
-										literature in bioethics that addresses the medical concerns. Therefore, I will focus on the
-										sometimes overlooked social dimension of the ethics of PrEP. Whereas the medical dimensions
-										of the ethics of PrEP include issues of safety, drug resistance and access among others, the
-										social dimensions of the ethics of PrEP include issues of serodiscordance, stigmatization and
-										sexual freedom. I will argue that PrEP increases access to the goods of sex and romantic
-										relationships for MSM and reduces the stigmatization of both HIV positive people and people
-										who are at high risk of contracting HIV, such as MSM. I will conclude that PrEP increases the
-										sexual freedom of MSM, including those who are HIV positive and those who are HIV negative.</p><br>
-										
-										<p>Furthermore, I will explain how the analogy between PrEP and the birth control pill is helpful for
-										understanding this sexual freedom; the ways in which the birth control pill empowers women is
-										similar to the the ways in which PrEP empowers MSM. However, this analogy is also helpful for
-										understanding some of the complexities and limitations on this sexual freedom. I will address
-										these complexities and limitations in order to further analyze the extent of the sexual freedom
-										that PrEP affords MSM.</p>
+										<p>Although the medical concerns about the ethics of PrEP often take precedence over the social concerns, 
+										there is a growing body of literature in bioethics that addresses the medical concerns. Therefore, I focus 
+										on the sometimes overlooked social dimension of the ethics of PrEP. Whereas the medical dimensions of the 
+										ethics of PrEP include issues of safety, drug resistance and access among others, the social dimensions of 
+										the ethics of PrEP include issues of serodiscordance, stigmatization and sexual freedom. I argue that PrEP 
+										increases access to the goods of sex and romantic relationships for MSM and reduces the stigmatization of 
+										both HIV positive people and people who are at high risk of contracting HIV, such as MSM. I conclude that 
+										PrEP increases the sexual freedom of MSM, including those who are HIV positive and those who are HIV 
+										negative. </p><br>
+
+										<p>Furthermore, I explain how the analogy between PrEP and the birth control pill is helpful for 
+										understanding this sexual freedom; the ways in which the birth control pill empowers women is similar 
+										to the the ways in which PrEP empowers MSM. However, this analogy is also helpful for understanding some 
+										of the complexities and limitations on this sexual freedom. I address these complexities and limitations 
+										in order to further analyze the extent of the sexual freedom that PrEP affords MSM.<p>
 									</div>
 								</div>
 							</div>

@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 	</head>
 	
-	<body>
+	<body class="blueBackground">
 	
 		<!-- Mobile Navigation Bar -->	
 		<div class="d-md-none justify-content-end fixed-top p-2 blueBackground" style="display:flex;" id="navBar">
@@ -29,7 +29,7 @@
 		<!-- Mobile Navigation Bar Menu -->		
 		<div class="h-100 w-100 d-md-none position-fixed m-0" id="navBarMenu">
 			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-				<a class="menuItem pb-1" href="../pages/publications.html"><b>Publications</b></a>
+				<a class="menuSelected pb-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
 				<a class="menuItem py-1" href="../pages/research.html">Research</a>
 				<a class="menuItem py-1" href="../pages/media.html">Media</a>
@@ -39,7 +39,7 @@
 		</div>	
 			
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 blueBackground mobileHeader">
+		<div class="d-md-none p-3 blueBackground mobileHeader" id="mobileHeader">
 			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
 				<div></div>
 				
@@ -55,9 +55,9 @@
 									
 				<div class="d-flex justify-content-center py-2">
 					<div class="socialMediaButtons">
-						<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 					</div>
 				</div>	
 			</div>
@@ -73,7 +73,7 @@
 							<div class="pt-3 d-flex align-items-start">
 								<a href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
 								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
-									<a class="menuItem flex-fill-lg " href="publications.html"><b>Publications</b></a>
+									<a class="menuSelected flex-fill-lg " href="publications.html">Publications</a>
 									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
 									<a class="menuItem flex-fill-lg" href="research.html">Research</a>
 									<a class="menuItem flex-fill-lg" href="media.html">Media</a>
@@ -95,9 +95,9 @@
 						
 						<div class="d-flex justify-content-center pb-2 pt-5">
 							<div class=" socialMediaButtons ">
-								<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 							</div>	
 						</div>								
 					</div>
@@ -106,7 +106,7 @@
 		</div>
 		
 		<!-- Right-hand Content -->
-		<div class="container-fluid p-0">
+		<div class="container-fluid p-0" id="contentContainer">
 			<div class="row w-100 px-0 mx-0">
 				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">
 

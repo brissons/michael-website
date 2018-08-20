@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 	</head>
 	
-	<body>
+	<body class="orangeBackground">
 	
 		<!-- Mobile Navigation Bar -->	
 		<div class="d-md-none justify-content-end fixed-top p-2 orangeBackground" style="display:flex;" id="navBar">
@@ -32,14 +32,14 @@
 				<a class="menuItem pb-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
 				<a class="menuItem py-1" href="../pages/research.html">Research</a>
-				<a class="menuItem py-1" href="../pages/media.html"><b>Media</b></a>
+				<a class="menuSelected py-1" href="../pages/media.html">Media</a>
 				<a class="menuItem py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
 				<a class="menuItem pt-1" href="../pages/contact.html">Contact</a>
 			</div>
 		</div>	
 				
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 orangeBackground mobileHeader">
+		<div class="d-md-none p-3 orangeBackground mobileHeader" id="mobileHeader">
 			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
 				
 				<div class="d-flex justify-content-center pt-4">
@@ -53,8 +53,8 @@
 					</div>
 					
 					<div class="d-flex flex-column align-items-center py-1">
-						<a class="subMenuItem" href="#" id="videoButtonSmall">Video</a>
-						<a class="subMenuItem" href="#" id="blogButtonSmall">Blog</a>
+						<a class="subMenuItem" href="#" id="videoButtonSmall">Videos</a>
+						<a class="subMenuItem" href="#" id="blogButtonSmall">Blogs</a>
 					</div>		
 								
 					<div>
@@ -65,14 +65,14 @@
 								
 				<div class="d-flex justify-content-center py-2">
 					<div class="socialMediaButtons">
-						<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 					</div>
 				</div>	
 			</div>
 		</div>
-		
+
 		<!-- Left-hand Navigation Header -->
 		<div class="container-fluid p-0">				
 			<div class="col-md-6 h-100 px-0 d-none d-md-block position-fixed" style="min-height:550px;">
@@ -86,7 +86,7 @@
 									<a class="menuItem flex-fill-lg " href="publications.html">Publications</a>
 									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
 									<a class="menuItem flex-fill-lg" href="research.html">Research</a>
-									<a class="menuItem flex-fill-lg" href="media.html"><b>Media</b></a>
+									<a class="menuSelected flex-fill-lg" href="media.html">Media</a>
 									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
 									<a class="menuItem flex-fill-lg" href="contact.html">Contact</a>
 								</div>
@@ -104,8 +104,8 @@
 							</div>
 							
 							<div class="d-flex flex-column align-items-center py-1">
-								<a class="subMenuItem" href="#" id="videoButton">Video</a>
-								<a class="subMenuItem" href="#" id="blogButton">Blog</a>
+								<a class="subMenuItem" href="#" id="videoButton">Videos</a>
+								<a class="subMenuItem" href="#" id="blogButton">Blogs</a>
 							</div>		
 							
 							<div>
@@ -117,9 +117,9 @@
 						
 						<div class="d-flex justify-content-center pb-2">
 							<div class=" socialMediaButtons ">
-								<a target="_blank" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" href="https://www.instagram.com/mmmontess/?hl=en" style="	color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="	color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="	color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="	color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 							</div>	
 						</div>								
 					</div>
@@ -128,13 +128,13 @@
 		</div>
 	
 		<!-- Right-hand Content -->
-		<div class="container-fluid p-0">
+		<div class="container-fluid p-0" id="contentContainer">
 			<div class="row w-100 px-0 mx-0">
 				<div class="col-md-6 offset-md-6 p-md-5 pt-5">
 					
 					<div class="row" id="videoHeader">
 						<div class="col-md-12 pt-4 pb-4">
-							<h2 class="text-center">Video</h2>
+							<h2 class="text-center">Videos</h2>
 						</div>
 					</div>	
 					
@@ -143,9 +143,9 @@
 							<p style="font-size: 16px; color:grey;">FEB 2018</p>
 							<span class="emphasizedText">“Romancing the PReP Package - CBRC - Gay Men's Health Summit”</span> on <a href="https://www.youtube.com/user/thegaymenchannel" target="_blank" class="orange">The Queer Network</a>
 
-							<div style="background:url(../images/circleLoading.svg) center center no-repeat;">
+							<div class="pt-3" style="background:url(../images/circleLoading.svg) center center no-repeat;">
 								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A5PeMOIMvSk?start=9" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A5PeMOIMvSk?" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
@@ -160,9 +160,9 @@
 							<p style="font-size: 16px; color:grey;">FEB 2018</p>
 							<span class="emphasizedText">“PReP - Increasing Sexual Freedom - Michael Montess”</span> on <a href="https://www.youtube.com/user/thegaymenchannel" target="_blank" class="orange">The Queer Network</a>
 
-							<div style="background:url(../images/circleLoading.svg) center center no-repeat;">
+							<div class="pt-3" style="background:url(../images/circleLoading.svg) center center no-repeat;">
 								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A7bVUbs2Qrs?rel=0&amp;start=21" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A7bVUbs2Qrs?" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
@@ -174,7 +174,7 @@
 					
 					<div class="row" id="blogHeader">
 						<div class="col-md-12 pt-4 pb-4">
-							<h2 class="text-center">Blog</h2>
+							<h2 class="text-center">Blogs</h2>
 						</div>
 					</div>
 					
@@ -182,7 +182,7 @@
 					<div class="row pb-5">
 						<div class="col-md-12">
 							<p style="font-size: 16px; color:grey;">SEPT 2017</p>
-							<span class="emphasizedText">“How to Solve the Moral Problem of Climate Change”</span> on <a href="https://brainwandering.wordpress.com/" target="_blank" class="orange">Brainwandering</a>
+							<p class="pb-3"><span class="emphasizedText">“How to Solve the Moral Problem of Climate Change”</span> on <a href="https://brainwandering.wordpress.com/" target="_blank" class="orange">Brainwandering</a></p>
 							
 							<a href="https://brainwandering.wordpress.com/2017/09/07/how-to-solve-the-moral-problem-of-climate-change/" target="_blank" class="orange"><i class="fas fa-external-link-alt mr-2"></i>Source</a>	
 						</div>
@@ -207,6 +207,7 @@
 			});
 
 			$("#videoButton, #videoButtonSmall").click(function() {
+			
 			$('html,body').animate({
 				scrollTop: $("#videoHeader").offset().top},
 				'slow');
