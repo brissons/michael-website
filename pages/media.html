@@ -53,6 +53,7 @@
 					</div>
 					
 					<div class="d-flex flex-column align-items-center py-1">
+						<a class="subMenuItem" href="#" id="opedButtonSmall">Op-Eds</a>
 						<a class="subMenuItem" href="#" id="videoButtonSmall">Videos</a>
 						<a class="subMenuItem" href="#" id="blogButtonSmall">Blogs</a>
 					</div>		
@@ -104,6 +105,7 @@
 							</div>
 							
 							<div class="d-flex flex-column align-items-center py-1">
+								<a class="subMenuItem" href="#" id="opedButton">Op-Eds</a>
 								<a class="subMenuItem" href="#" id="videoButton">Videos</a>
 								<a class="subMenuItem" href="#" id="blogButton">Blogs</a>
 							</div>		
@@ -131,6 +133,22 @@
 		<div class="container-fluid p-0" id="contentContainer">
 			<div class="row w-100 px-0 mx-0">
 				<div class="col-md-6 offset-md-6 p-md-5 pt-5">
+					
+					<div class="row" id="opedHeader">
+						<div class="col-md-12 pt-4 pb-4">
+							<h2 class="text-center">Op-Eds</h2>
+						</div>
+					</div>
+					
+					<!-- Blended Learning Corriculum -->
+					<div class="row pb-5">
+						<div class="col-md-12">
+							<p style="font-size: 16px; color:grey;">APRIL 2019</p>
+							<p class="pb-3"><span class="emphasizedText">"No one wins in pipeline adventure"</span> with Anna Cooper Reed
+							in <a href="https://www.winnipegfreepress.com/" target="_blank" class="orange">The Winnipeg Free Press</a></p>
+							<a href="https://www.winnipegfreepress.com/opinion/analysis/no-one-wins-in-pipeline-adventure-508418722.html?fbclid=IwAR3mYE8AWrn1hxpq9HKIoiDGDv40qwL28Ijh5UkuWonhxZWqTHkUoQhZP_k#have-your-say" target="_blank" class="orange"><i class="fas fa-external-link-alt mr-2"></i>Source</a>	
+						</div>
+					</div>
 					
 					<div class="row" id="videoHeader">
 						<div class="col-md-12 pt-4 pb-4">
@@ -207,9 +225,14 @@
 			});
 
 			$("#videoButton, #videoButtonSmall").click(function() {
-			
 			$('html,body').animate({
 				scrollTop: $("#videoHeader").offset().top},
+				'slow');
+			});
+			
+			$("#opedButton, #opedButtonSmall").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#opedHeader").offset().top},
 				'slow');
 			});
 		});
