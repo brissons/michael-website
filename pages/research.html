@@ -10,25 +10,36 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	</head>
 	
 	<body class="redBackground">
-	
-		<!-- Mobile Navigation Bar -->	
-		<div class="d-md-none justify-content-end fixed-top p-2 redBackground" style="display:flex;" id="navBar">
-			<div class="mr-auto pl-2">
-				<a href="../index.html" class="pr-3 logo">Michael Montess</a>
+
+		<!-- Fixed Header -->
+		<div class="col-md-12 d-flex align-items-center justify-content-between py-1 fixed-top float-right">
+			<div class="float-left">
+				<a href="../index.html" class="logo">MM</a>
 			</div>
-			<div class="hamburger pr-2" id="hamburgerButton">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
+			<div class="float-right d-flex align-items-center hamburgerButton menuButton">
+				<b>Menu</b>
+				<div class="m-2">
+					<div class="hamburger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</div>
 			</div>
+		</div>
+			
+		<!-- Mobile Navigation Bar Background-->	
+		<div class="d-flex align-items-center d-lg-none fixed-top p-2 redBackground" id="navBarMobile">
 		</div>
 		
 		<!-- Mobile Navigation Bar Menu -->		
-		<div class="h-100 w-100 d-md-none position-fixed m-0" id="navBarMenu">
+		<div class="w-100 h-100 d-lg-none position-fixed m-0" id="navBarMenuMobile" style="z-index:9; min-height:375px;">
 			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+				<a class="menuItem pb-1" href="../index.html">Home</a>
 				<a class="menuItem pb-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
 				<a class="menuSelected py-1" href="../pages/research.html">Research</a>
@@ -39,86 +50,58 @@
 		</div>	
 				
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 redBackground mobileHeader" id="mobileHeader">
-			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
+		<div class="d-lg-none pb-3 redBackground" id="headerMobile" style="height: 95vh; min-height: 350px;">
+			<div class="d-flex flex-column w-100 h-100 justify-content-between align-items-center">
 				
-				<div class="d-flex justify-content-center pt-4">
-					<h1>Research</h1>
-				</div>									
-
-				<div class="d-flex flex-column align-items-center">	
-										
-					<div>
-						<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
-					</div>
+				<div></div>
 					
-					<div class="d-flex flex-column align-items-center py-1">
-						<a class="subMenuItem" href="#" id="prepButtonSmall">PrEP</a>
-						<a class="subMenuItem" href="#" id="climateButtonSmall">Climate Change</a>
-						<a class="subMenuItem" href="#" id="rightsButtonSmall">Non-Human Animal Rights</a>
-					</div>
-								
+				<div class="pt-5">	
+					<h1><b>Research</b></h1>							
 					<div>
-						<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+						<div class="d-flex flex-column align-items-center">
+							<div class="mx-auto dot" style="margin-bottom: 2px"></div>
+							<a class="subMenuItem" href="#" id="prepButtonSmall">PrEP</a>
+							<a class="subMenuItem" href="#" id="climateButtonSmall">Climate Change</a>
+							<a class="subMenuItem" href="#" id="rightsButtonSmall">Non-Human Animal Rights</a>
+							<div class="mx-auto dot"></div>
+						</div>
 					</div>
-										
 				</div>
 				
-				<div class="d-flex justify-content-center py-2">
-					<div class="socialMediaButtons">
-						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
-					</div>
-				</div>	
+				<div class="fadeInGroup">
+					<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+					<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-2"></i></a>
+					<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+				</div>										
 			</div>
 		</div>
 			
-		<!-- Left-hand Navigation Header -->
-		<div class="container-fluid p-0">				
-			<div class="col-md-6 h-100 px-0 d-none d-md-block position-fixed" style="min-height:575px;">
-				<div class="h-100 p-3 redBackground">
-					<div class="mx-auto h-100 d-flex flex-column justify-content-between p-3 menuBorder" style="width: 85%;">
-			
-						<div class="d-none d-md-block">
-							<div class="pt-3 d-flex align-items-start">
-								<a href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
-								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
-									<a class="menuItem flex-fill-lg " href="publications.html">Publications</a>
-									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
-									<a class="menuSelected flex-fill-lg" href="research.html">Research</a>
-									<a class="menuItem flex-fill-lg" href="media.html">Media</a>
-									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
-									<a class="menuItem flex-fill-lg" href="contact.html">Contact</a>
-								</div>
-							</div>
-						</div>
+		<!-- Left Hand Navigation -->	
+		<div class="container-fluid p-0">		
+			<div class="col-lg-6 h-100 px-0 d-none d-md-block position-fixed" id="leftHandNavigation">
 
-						<div class="d-flex flex-column align-items-center">
-						
+				<div class="h-100 p-2 redBackground">
+					<div class="mx-auto h-100 d-flex flex-column justify-content-between px-5">
+
+						<div>
+						</div>
+												
+						<div class="d-flex flex-column align-items-center pt-3">
 							<div>
-								<h1>Research</h1>							
+								<h1><b>Research</b></h1>							
 							</div>						
 								
-							<div>
-								<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
-							</div>
-								
-							<div class="d-flex flex-column align-items-center py-1">
+							<div class="d-flex flex-column align-items-center py-4">
+								<div class="mx-auto dot" style="margin-bottom: 2px"></div>
 								<a class="subMenuItem" href="#" id="prepButton">PrEP</a>
 								<a class="subMenuItem" href="#" id="climateButton">Climate Change</a>
 								<a class="subMenuItem" href="#" id="rightsButton">Non-Human Animal Rights</a>
-							</div>
-								
-							<div>
-								<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+								<div class="mx-auto dot"></div>
 							</div>
 						</div>
-						
-						<div></div>
-							
-						<div class="d-flex justify-content-center pb-2">
-							<div class="socialMediaButtons ">
+
+						<div class="d-flex justify-content-center pb-1">
+							<div class="fadeInGroup">
 								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
 								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
 								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
@@ -129,115 +112,121 @@
 			</div>
 		</div>		
 
-		<!-- Right-hand Content -->			
-		<div class="container-fluid p-0" id="contentContainer">
-			<div class="row w-100 px-0 mx-0">
-				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">		
+		
+		<!--  Website navigation menu -->
+		<div class="offset-lg-6 col-lg-6 my-0 h-100 w-100 p-0 d-none d-lg-block position-fixed" style="min-height:325px; pointer-events: none !important; z-index:100;">
+			<div class="h-100 px-0" style="z-index:10; pointer-events: none;">
+				<div class="h-100" id="navBarMenu">
+					<div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+						<a class="menuItemLarge pb-1" href="../index.html">Home</a>
+						<a class="menuItemLarge pb-1" href="publications.html">Publications</a>
+						<a class="menuItemLarge py-1" href="presentations.html">Presentations</a>
+						<a class="menuSelectedLarge py-1" href="research.html">Research</a>
+						<a class="menuItemLarge py-1" href="media.html">Media</a>
+						<a class="menuItemLarge py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
+						<a class="menuItemLarge pt-1" href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Right-hand Content -->				
+		<div class="container-fluid p-0 position-absolute col-lg-6 offset-lg-6 content defaultBackground">
+			<div class="px-0 d-lg-block px-xl-4 pt-4 defaultBackground">
+			
+				<div style="height: 50vh; margin-bottom:-170px; min-height:130px;" class="d-none d-lg-block">
+				</div>
+			
+				<div class="d-flex flex-column align-items-center justify-content-center px-lg-5">
+					<div class="col-lg-12">
+					
+						<h2 id="prepHeader" class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; font-weight:bold;">Pre-Exposure Prophylaxis (PrEP)</h2>
 
-					<div class="row" id="prepHeader">
-						<div class="col-md-12 py-4">
-							<h2 class="text-center">Pre-Exposure Prophylaxis (PrEP)</h2>
-						</div>
-					</div>	
-
-					<!-- PreP research -->
-					<div class="row">
-						<div class="col-md-12">
-							<p>
-								My research on pre-exposure prophylaxis is the topic of my dissertation. I am focusing on the
-								social and political dimensions of the ethics of PrEP for HIV prevention among men who have
-								sex with men (MSM). I have presented on this research at the <a href="https://www.acpcpa.ca/cpages/home-page" target="_blank" class="red">Canadian Philosophical Association</a> 
-								conference in 2016, the <a href="https://www.bioethics.ca/" target="_blank" class="red">Canadian Bioethics Society</a> conference in 2017 and 2018,
-								the <a href="http://cbrc.net/" target="_blank" class="red">Community Based Research Centre</a> conference in 2017 and the <a href="https://www.cahr-acrv.ca/" target="_blank" class="red">Canadian Association for HIV Research</a> conference in 2018.
-							</p>
-								
-							<div class="rotateIcon mt-2">
-								<a class="collapsed" data-toggle="collapse" href="#prepResearch" aria-expanded="true" aria-controls="prepResearch" style="text-decoration:none; color:black;">
-									<i class="fas fa-angle-down mr-2 red" style=" font-size:1.5em; position:relative; top:5px;"></i>More
-								</a>
-								
-								<div id="prepResearch" class="collapse">
-									<div class="card card-body mt-3">
-										<p>
-											My project addresses crucial ethical dimensions of a growing practice of HIV prevention: the use
-											of pre-exposure prophylaxis (PrEP) by men who have sex with men (MSM). PrEP is the use of
-											antiretroviral drugs by people who do not have HIV as a strategy for its prevention. People who
-											take PrEP are usually people who are at very high risk for HIV and MSM are the highest risk
-											group for HIV in North America. While PrEP has the possibility of becoming an integral part of
-											the fight against HIV, there are still many concerns about the use of PrEP, especially by MSM.
-											Although the medical safety and efficacy of PrEP is increasingly well supported by a growing
-											body of medical research, it is important to consider the effects of PrEP on the wider social and
-											political lives of MSM as well as its role within the broader context of HIV treatment, prevention,
-											and de-stigmatization. Therefore, I will address the too-often overlooked social and political
-											dimensions of the ethics of PrEP, arguing that these are as important as the medical
-											dimensions. </p><br>
-										<p>	
-											Drawing on the risk assessment literature, the nuanced history of HIV in North
-											America and its intersection with homophobia, biphobia and the continuing gay rights
-											movement, and by focusing on moral concepts like risk, trust, and solidarity, I identify key
-											norms, values, and biases that have shaped how PrEP is discussed in both academic and
-											popular contexts. These norms, values, and biases involve the relative prioritization of physical,
-											mental and emotional health, the structure of relationships, the moral acceptability of
-											promiscuity and the intergenerational views of the gay community. I argue that identifying and
-											investigating these norms, values and biases significantly strengthens the case for using PrEP
-											as HIV prevention. Responding to arguments against PrEP and drawing on the philosophical
-											literature of the concepts involved in the debate about PrEP enables my work to go beyond the
-											clinic door and develop a framework for MSM and other social groups faced with controversial
-											medical technologies.
-										</p>
+						<!-- PreP research -->
+						<div class="row pb-5">
+							<div class="col-md-12">
+								<p>
+									My research on pre-exposure prophylaxis is the topic of my dissertation. I am focusing on the
+									social and political dimensions of the ethics of PrEP for HIV prevention among men who have
+									sex with men (MSM). 
+									
+									 I have presented on this research at the <a href="https://www.bioethics.ca/" target="_blank" class="red">Canadian Bioethics Society</a>
+									 conference in 2019, 2018 and 2017, the <a href="https://www.cahr-acrv.ca/" target="_blank" class="red">Canadian Association for HIV Research</a> 
+									 conference in 2018, the <a href="http://cbrc.net/" target="_blank" class="red">Community Based Research Centre</a> conference in 2017
+									 and the <a href="https://www.acpcpa.ca/cpages/home-page" target="_blank" class="red">Canadian Philosophical Association</a> conference in 2016.
+								</p>
+									
+								<div class="rotateIcon mt-2">
+									<a class="collapsed red" data-toggle="collapse" href="#prepResearch" aria-expanded="true" aria-controls="prepResearch">
+										<i class="fas fa-angle-down mr-2 red" style=" font-size:1.5em; position:relative; top:5px;"></i><b>More</b>
+									</a>
+									
+									<div id="prepResearch" class="collapse">
+										<div class="card card-body mt-3">
+											<p>
+												My project addresses crucial ethical dimensions of a growing practice of HIV prevention: the use
+												of pre-exposure prophylaxis (PrEP) by men who have sex with men (MSM). PrEP is the use of
+												antiretroviral drugs by people who do not have HIV as a strategy for its prevention. People who
+												take PrEP are usually people who are at very high risk for HIV and MSM are the highest risk
+												group for HIV in North America. While PrEP has the possibility of becoming an integral part of
+												the fight against HIV, there are still many concerns about the use of PrEP, especially by MSM.
+												Although the medical safety and efficacy of PrEP is increasingly well supported by a growing
+												body of medical research, it is important to consider the effects of PrEP on the wider social and
+												political lives of MSM as well as its role within the broader context of HIV treatment, prevention,
+												and de-stigmatization. Therefore, I will address the too-often overlooked social and political
+												dimensions of the ethics of PrEP, arguing that these are as important as the medical
+												dimensions. </p><br>
+											<p>	
+												Drawing on the risk assessment literature, the nuanced history of HIV in North
+												America and its intersection with homophobia, biphobia and the continuing gay rights
+												movement, and by focusing on moral concepts like risk, trust, and solidarity, I identify key
+												norms, values, and biases that have shaped how PrEP is discussed in both academic and
+												popular contexts. These norms, values, and biases involve the relative prioritization of physical,
+												mental and emotional health, the structure of relationships, the moral acceptability of
+												promiscuity and the intergenerational views of the gay community. I argue that identifying and
+												investigating these norms, values and biases significantly strengthens the case for using PrEP
+												as HIV prevention. Responding to arguments against PrEP and drawing on the philosophical
+												literature of the concepts involved in the debate about PrEP enables my work to go beyond the
+												clinic door and develop a framework for MSM and other social groups faced with controversial
+												medical technologies.
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					
-					<div class="row py-5">
-						<!-- <div class="mx-auto line"></div> -->
-					</div>	
-					
-					<!-- Climate Change -->
-					<div class="row" id="climateHeader">
-						<div class="col-md-12 py-4">
-							<h2 class="text-center">Climate Change</h2>
-						</div>
-					</div>
+						
+						<h2 id="climateHeader" class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; font-weight:bold;">Climate Change</h2>
 
-
-					<div class="row">
-						<div class="col-md-12">
-							<p>
-								My research on climate change is the topic of my secondary research project. I am focusing on
-								acknowledging and challenging anthropocentrism in the ethics of climate change. I presented
-								on this research at the <a href="https://www.acpcpa.ca/cpages/home-page" target="_blank" class="red">Canadian Philosophical Association</a> conference in 2018.
-							</p>	
+						<div class="row pb-5">
+							<div class="col-md-12">
+								<p>
+									My research on climate change is the topic of my secondary research project. I am focusing on
+									acknowledging and challenging anthropocentrism in the ethics of climate change. 
+									I presented on this research at the <a href="https://www.acpcpa.ca/cpages/home-page" target="_blank" class="red">Canadian Philosophical Association</a> 
+									conference and the <a href="http://csep-scpe.ca/" target="_blank" class="red">Canadian Society for Environmental Philosophy</a> in 2018.
+								</p>	
+							</div>
 						</div>
+
+						<h2 id="rightsHeader" class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; font-weight:bold;">Non-Human Animal Rights</h2>
+
+									
+						<div class="row pb-5">
+							<div class="col-md-12">			
+								<p>
+									My research on non-human animal rights is the topic of another research project. 
+									I am focusing  on anthropocentrism, speciesism and the effect of the uncanny valley 
+									problem on the ethics of non-human animal rights. I presented on this research at 
+									the <a href="http://philosophy.gradstudies.yorku.ca/" target="_blank" class="red"> York University Graduate Philosophy</a> conference in 2016.
+								</p>								
+							</div>
+						</div>	
+						
+						
+						<div class="px-0 d-none d-lg-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
+
 					</div>
-
-					<div class="row py-5">
-						<!-- <div class="mx-auto line"></div> -->
-					</div>	
-					
-					<!-- Non-Human Animal Rights -->
-					<div class="row px-4" id="rightsHeader">
-						<div class="col-md-12 py-4">
-							<h2 class="text-center">Non-Human Animal Rights</h2>
-						</div>
-					</div>
-					
-					
-					<div class="row pb-5">
-						<div class="col-md-12">			
-							<p>
-								My research on non-human animal rights is the topic of another research project. 
-								I am focusing  on anthropocentrism, speciesism and the effect of the uncanny valley 
-								problem on the ethics of non-human animal rights. I presented on this research at 
-								the <a href="http://philosophy.gradstudies.yorku.ca/" target="_blank" class="red"> York University Graduate Philosophy</a> conference in 2016.
-							</p>								
-						</div>
-					</div>	
-					
-					<div class="px-0 d-none d-md-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
-
 				</div>
 			</div>
 		</div>
@@ -250,19 +239,19 @@
 		$(document).ready(function(){
 			$("#prepButton, #prepButtonSmall").click(function() {
 			$('html,body').animate({
-				scrollTop: $("#prepHeader").offset().top},
+				scrollTop: $("#prepHeader").offset().top - 60},
 				'slow');
 			});
 
 			$("#climateButton, #climateButtonSmall").click(function() {
 			$('html,body').animate({
-				scrollTop: $("#climateHeader").offset().top},
+				scrollTop: $("#climateHeader").offset().top - 60},
 				'slow');
 			});
 
 			$("#rightsButton, #rightsButtonSmall").click(function() {
 			$('html,body').animate({
-				scrollTop: $("#rightsHeader").offset().top},
+				scrollTop: $("#rightsHeader").offset().top - 60},
 				'slow');
 			});
 
