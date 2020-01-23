@@ -2,30 +2,44 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
-		<title>Michael Montess</title>
+	<title>Michael Montess</title>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	</head>
 
-	<body style="background-color: #fffcf6;">
+	<body class="defaultBackground">
 
-		<!-- Mobile Navigation Bar -->
-		<div class="d-md-none justify-content-end fixed-top p-2 w-100" style="background-color:#fffcf6; display:flex;" id="navBar">
-			<div class="hamburger pr-2" id="hamburgerButton">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
+		<!-- Fixed Header -->
+		<div class="col-md-12 d-flex align-items-center justify-content-between py-1 fixed-top float-right">
+			<div class="float-left">
+				<a href="../index.html" class="logo">MM</a>
+			</div>
+			<div class="float-right d-flex align-items-center hamburgerButton menuButton">
+				<strong>Menu</strong>
+				<div class="m-2">
+					<div class="hamburger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<!-- Mobile Navigation Bar Menu -->		
-		<div class="h-100 w-100 d-md-none position-fixed m-0" id="navBarMenu">
-			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+		<!-- Mobile Navigation Bar Background-->
+		<div class="d-flex align-items-center d-lg-none fixed-top p-2 defaultBackground" id="navBarMobile">
+		</div>
+
+		<!-- Mobile Navigation Bar Menu -->
+		<div class="w-100 h-100 d-lg-none position-fixed m-0" id="navBarMenuMobile" style="z-index:9; min-height:300px;">
+			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center" style="margin-top:-28px;">
+				<a class="menuSelected pb-1" href="index.html">Home</a>
 				<a class="menuItem pb-1" href="pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="pages/presentations.html">Presentations</a>
 				<a class="menuItem py-1" href="pages/research.html">Research</a>
@@ -33,154 +47,142 @@
 				<a class="menuItem py-1" href="cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
 				<a class="menuItem pt-1" href="pages/contact.html">Contact</a>
 			</div>
-		</div>	
-		
+		</div>
+
 		<!-- Mobile Header -->
-		<div class="d-md-none" style="color: #fffcf6; position:relative; background-image: url(images/michaelCanoe.jpg); background-size:cover;background-position:center; top:50px; z-index: 2;" id="mobileHeader">
-			<div class="p-3" style="background-color: rgba(0, 0, 0, 0.45); width: 100%;">
-				<div class="d-flex flex-column w-100 justify-content-between" style="min-height: 325px; border: 2px solid #fffcf6;">
-					<div class="d-flex flex-column align-items-center pt-4">
-						<div style="line-height:100px;">
-							<h1>Michael<br>Montess</h1>
-						</div>				
-
-						<div class="pb-1">
-							<text style="font-size: 1.5rem">PhD Candidate</text>
-						</div>									
-
-						<div>
-							<img src="images/ornamentWhite.png" style="width:100px" alt="Ornament"/>
-						</div>
-					</div>
-										
-					<div class="d-flex justify-content-center py-2">
-						<div class="socialMediaButtons">
-							<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:#fffcf6;"><i class="fab fa-facebook fa-md"></i></a>
-							<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:#fffcf6;"><i class="fab fa-instagram fa-md px-1"></i></a>
-							<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:#fffcf6;"><i class="fab fa-linkedin fa-md"></i></a>
-						</div>
-					</div>	
+		<div class="d-lg-none pb-3 defaultBackground" id="headerMobile" style="height: 95vh; min-height:475px;">
+			<div class="d-flex flex-column w-100 h-100 justify-content-between align-items-center">
+				
+				<div class="mt-5"></div>
+				
+				<div  style="max-width:400px !important; max-height:100%; min-height:300px; min-width: 300px;" class="p-5 text-center">
+					<div class="text-center" style="font-size:45px; line-height:1.1"><strong>Michael<br>Montess</strong></div>
+					<img id="michaelSmall" class="rounded-circle img-fluid mx-auto img-center p-3" style="max-height:100%;" src="images/michaelCanoe.jpg" alt="Michael Canoe">
 				</div>
+			
+				<div class="fadeInGroup pt-5">
+					<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+					<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-2"></i></a>
+					<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+				</div>	
 			</div>
 		</div>
 		
 		<!-- Left-hand Navigation Menu -->
-		<div class="container-fluid p-0">				
-			<div class="col-md-6 h-100 px-0 d-none d-md-block" style="position:fixed; z-index: 1; min-height:500px;">
-				<div class="h-100" style="background-image: url(images/michaelCanoe.jpg); background-size:cover; background-position:center;">
-					<div class="p-3" style=" background-color: rgba(0, 0, 0, 0.45); position: absolute;top: 0;left: 0;width: 100%; height: 100%;">
-						<div class="mx-auto h-100 d-flex flex-column justify-content-between p-3" style="width: 85%; border: 2px solid #fffcf6;">
-						
-							<div class="d-flex ml-auto flex-column pr-2 pt-3" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">								
-								<a style="color: #fffcf6;" class="menuItem" href="pages/publications.html">Publications</a>
-								<a style="color: #fffcf6;" class="menuItem" href="pages/presentations.html">Presentations</a>
-								<a style="color: #fffcf6;" class="menuItem" href="pages/research.html">Research</a>
-								<a style="color: #fffcf6;" class="menuItem" href="pages/media.html">Media</a>
-								<a style="color: #fffcf6; min-width:55px;" class="menuItem" href="cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
-								<a style="color: #fffcf6;" class="menuItem" href="pages/contact.html">Contact</a>
-							</div>
-								
-							<div class="d-flex align-items-center flex-column pb-5" style="color:#fffcf6;">
-								<div style="line-height:100px;">
-									<h1>Michael<br>Montess</h1>
-								</div>				
-								
-								<div>
-									<text style="font-size: 1.75rem">PhD Candidate</text>
-								</div>					
-								
-								<div>
-									<img src="images/ornamentWhite.png" style="width:100px" alt="ornament"/>
-								</div>
-							</div>
-									
-							<div class="d-flex justify-content-center py-2">
-								<div class=" socialMediaButtons">
-									<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:#fffcf6;"><i class="fab fa-facebook fa-md"></i></a>
-									<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:#fffcf6;"><i class="fab fa-instagram fa-md px-1"></i></a>
-									<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:#fffcf6;"><i class="fab fa-linkedin fa-md"></i></a>
-								</div>	
-							</div>	
-						</div>			
-					</div>
-				</div>
-			</div>	
-		</div>
-
-		<!-- Right-hand Content -->
 		<div class="container-fluid p-0">
-			<div class="row h-100 w-100 px-0 mx-0">
-				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">
-					
-					<div class="row">
-						<div class="col-md-12 pt-4 pb-4">
-							<h2 class="text-center">About Me</h2>
-						</div>
-					</div>
+			<div class="col-md-6 h-100 px-0 d-none d-lg-block position-fixed" id="leftHandNavigation">
+				<div class="h-100 p-2 defaultBackground">
+					<div class="mx-auto h-100 d-flex flex-column justify-content-between">
 
-					<div class="row">	
-						<div class="col-md-12">
-							<p>
-								My name is <b>Michael Montess</b> and I am a <b>PhD Candidate in Philosophy at <a href="http://philosophy.gradstudies.yorku.ca/" target="_blank">York University</a></b> in
-								Toronto, Ontario. My research interests are in <b>applied ethics, bioethics and feminist philosophy</b>.
-								My dissertation is on the social and political dimensions of the ethics of pre-exposure
-								prophylaxis (PrEP) for HIV prevention among men who have sex with men (MSM).
-							</p>					
+						<div></div>
+					
+						<div style="padding-top: 3rem;">	
+							<h1 style="white-space: nowrap;"><strong>Michael Montess</strong></h1>
+							<div>
+								<div class="d-flex flex-column align-items-center justify-content-center p-2">
+									<div class="d-flex flex-column align-items-center justify-content-center pb-md-4">
+										<img class="rounded-circle img-fluid" style="max-height:250px" src="images/michaelCanoe.jpg" alt="Michael Canoe">
+									</div>
+								</div>
+							</div>						
+						</div>
+
+						<div class="d-flex justify-content-center pb-1">
+							<div class="fadeInGroup">
+								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+							</div>
 						</div>
 					</div>
-						
-					<div class="row py-4">
-						<div class="mx-auto dot"></div>
-					</div>
-							
-					<div class="row">
-						<div class="col-md-12">
-							<p>
-								I always endeavour to apply philosophy to social issues in order to make a difference in the
-								world, whether as an educator or a researcher. I have worked as a teaching assistant at <b>York
-								University, Western University and University of Manitoba</b>, a board member at the <b><a href="http://www.marl.mb.ca/" target="_blank">Manitoba
-								Association for Rights and Liberties</a></b>, a research assistant at the <b><a href="http://www.actoronto.org/" target="_blank">AIDS Committee of Toronto</a></b> as
-								well as a youth program coordinator, wilderness canoe guide, youth counsellor and disability
-								support worker at the <b><a href="http://www.ywinnipeg.ca/" target="_blank">YMCA-YWCA of Winnipeg</a></b>. I am also an editor of <b><a href="https://brainwandering.wordpress.com/" target="_blank">Brainwandering</a></b>, a blog
-								written and maintained by the <b>York University Public Philosophy Outreach Initiative</b>.
-							</p>
-						</div>
-					</div>
-					
-					<div class="row py-4">
-						<div class="mx-auto dot"></div>
-					</div>
-					
-					<div class="row pb-5">	
-						<div class="col-md-12">
-							<p>
-								I completed my <b>MA in Philosophy at <a href="https://www.uwo.ca/philosophy/graduate/index.html" target="_blank">Western University</a></b> and my <b>BA in Philosophy at
-								<a href="http://umanitoba.ca/philosophy/" target="_blank">University of Manitoba</a></b>, both degrees focused on the application of philosophy and ethical theory
-								to practical issues.
-							</p>
-						</div>
-					</div>
-					
-					<div class="px-0 d-none d-md-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
 				</div>
 			</div>
 		</div>
-	
+
+		<!--  Website navigation menu -->
+		<div class="offset-md-6 col-md-6 my-0 h-100 w-100 p-0 d-none d-lg-block position-fixed" style="min-height:300px; pointer-events: none !important; z-index:2;">
+			<div class="h-100 px-0" style="z-index:10000; pointer-events: none;">
+				<div class="h-100" id="navBarMenu" style="background-color:#acc4d5; padding-top:28px;">
+					<div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+						<a class="menuSelectedLarge pb-1" href="index.html">Home</a>
+						<a class="menuItemLarge pb-1" href="pages/publications.html">Publications</a>
+						<a class="menuItemLarge py-1" href="pages/presentations.html">Presentations</a>
+						<a class="menuItemLarge py-1" href="pages/research.html">Research</a>
+						<a class="menuItemLarge py-1" href="pages/media.html">Media</a>
+						<a class="menuItemLarge py-1" href="cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
+						<a class="menuItemLarge pt-1" href="pages/contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right-hand Content -->
+		<div class="container-fluid p-0 position-absolute col-lg-6 offset-lg-6 content" style="background-color:#e3ebf1;">
+			<div class="px-0 d-lg-block px-xl-4 pt-5 pt-lg-4" style="background-color:#e3ebf1;">
+				
+				
+				<div style="height: 50vh; margin-bottom:-190px; min-height:270px;" class="d-none d-lg-block">
+				</div>
+
+				<div class="d-flex flex-column align-items-center justify-content-center px-lg-5" style="background-color:#e3ebf1;">
+					<div class="col-lg-12 pb-5">
+
+						<h2 id="aboutMe" class="pb-2 text-center text-lg-left" style="line-height: 1.0; text-align:center; font-size: 35px !important; font-weight:bold;">About Me</h2>
+
+						<p>
+							My name is Michael Montess, and I am 
+							a PhD Candidate in Philosophy at <a href="http://philosophy.gradstudies.yorku.ca/" target="_blank">York University</a> in Toronto, Ontario.
+							My research interests are in applied ethics, bioethics, environmental ethics and social and political philosophy.
+							My dissertation is on the social and political dimensions of the ethics of pre-exposure
+							prophylaxis (PrEP) for HIV prevention among men who have sex with men (MSM).
+						</p>
+										
+						<div class="rotateIcon mt-2" style="flex-wrap: wrap">
+							<a class="collapsed" data-toggle="collapse" href="#blendedLearning" aria-expanded="true" aria-controls="blendedLearning" style=" text-decoration-color:black;">
+								<i class="fas fa-angle-down mr-2" style="position:relative; font-size:1.5em; top:4px; color:black;"></i><strong style="color:black;">More</strong>
+							</a>
+
+							<div id="blendedLearning" class="collapse" >
+								<div class="card card-body mt-3" style="background-color:#e3ebf1 !important;">
+									<p>
+										I always endeavour to apply philosophy to social issues in order to make a difference in the
+										world, whether as an educator or a researcher. 
+										I have worked as a course instructor at York University, a teaching assistant at York University, 
+										Western University and University of Manitoba, a board member at the <a href="http://www.marl.mb.ca/" target="_blank">Manitoba
+										Association for Rights and Liberties</a>, a research assistant at the <a href="http://www.actoronto.org/" target="_blank">AIDS Committee of Toronto</a> as
+										well as a youth program coordinator, wilderness canoe guide, youth counsellor and disability
+										support worker at the <a href="http://www.ywinnipeg.ca/" target="_blank">YMCA-YWCA of Winnipeg</a>. I am also an editor of <a href="https://brainwandering.wordpress.com/" target="_blank">Brainwandering</a>, a blog
+										written and maintained by the York University Public Philosophy Outreach Initiative.
+									</p>
+									
+									<br>
+											
+									<p>
+										I completed my MA in Philosophy at <a href="https://www.uwo.ca/philosophy/graduate/index.html" target="_blank">Western University</a> and my BA in Philosophy at
+										<a href="http://umanitoba.ca/philosophy/" target="_blank">University of Manitoba</a>, both degrees focused on the application of philosophy and ethical theory
+										to practical issues.
+									</p>
+								</div>
+							</div>
+						</div>								
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
 		<script src="javascript/main.js"></script>
-	
-		<!-- <script> -->
-	<!-- $(function(){ -->
-		<!-- var image = new Image();       -->
-		<!-- image.src="images/michaelCanoe.jpg";        -->
-		<!-- $(".backgroundImage").hide(); -->
-		<!-- $(image).on('load', function() { -->
-			<!-- $(".backgroundImage").css("background-image","url("+$(this).attr("src")+")").fadeIn(200);   			 -->
-		<!-- }); -->
-	<!-- }); -->
-	<!-- </script> -->
-	
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$("#michaelSmall").click(function() {
+				$('html,body').animate({
+					scrollTop: $("#aboutMe").offset().top - 70},
+					'slow');
+				});
+			});
+		</script>
+		
 	</body>
 </html>

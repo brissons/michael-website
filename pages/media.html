@@ -10,25 +10,36 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	</head>
 	
 	<body class="orangeBackground">
-	
-		<!-- Mobile Navigation Bar -->	
-		<div class="d-md-none justify-content-end fixed-top p-2 orangeBackground" style="display:flex;" id="navBar">
-			<div class="mr-auto pl-2">
-				<a href="../index.html" class="pr-3 logo">Michael Montess</a>
+
+		<!-- Mobile Navigation Bar Background-->	
+		<div class="d-flex align-items-center d-lg-none fixed-top p-2 orangeBackground" id="navBarMobile">
+		</div>
+		
+		<!-- Fixed Header -->
+		<div class="col-md-12 d-flex align-items-center justify-content-between py-1 fixed-top float-right" style="min-width:300px;">
+			<div class="float-left">
+				<a href="../index.html" class="logo">MM</a>
 			</div>
-			<div class="hamburger pr-2" id="hamburgerButton">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
+			<div class="float-right d-flex align-items-center hamburgerButton menuButton">
+				<b>Menu</b>
+				<div class="m-2">
+					<div class="hamburger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<!-- Mobile Navigation Menu -->
-		<div class="h-100 w-100 d-md-none position-fixed m-0" id="navBarMenu">
+		<!-- Mobile Navigation Bar Menu -->		
+		<div class="w-100 h-100 d-lg-none position-fixed m-0" id="navBarMenuMobile" style="z-index:9; min-height:375px;">
 			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+				<a class="menuItem pb-1" href="../index.html">Home</a>
 				<a class="menuItem pb-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
 				<a class="menuItem py-1" href="../pages/research.html">Research</a>
@@ -36,179 +47,160 @@
 				<a class="menuItem py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
 				<a class="menuItem pt-1" href="../pages/contact.html">Contact</a>
 			</div>
-		</div>	
+		</div>		
 				
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 orangeBackground mobileHeader" id="mobileHeader">
-			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
+		<div class="d-lg-none pb-3 orangeBackground" id="headerMobile" style="height: 95vh; min-height: 350px;">
+			<div class="d-flex flex-column w-100 h-100 justify-content-between align-items-center">
+
+				<div></div>
 				
-				<div class="d-flex justify-content-center pt-4">
-					<h1>Media</h1>
-				</div>	
-					
-				<div class="d-flex flex-column align-items-center">								
-
+				<div class="pt-5">	
+					<h1><b>Media</b></h1>
 					<div>
-						<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+						<div class="d-flex flex-column align-items-center">
+							<div class="mx-auto dot" style="margin-bottom: 2px"></div>
+							<a class="subMenuItem" href="#" id="opedButtonSmall">Op-Eds</a>
+							<a class="subMenuItem" href="#" id="blogButtonSmall">Blogs</a>
+							<a class="subMenuItem" href="#" id="videoButtonSmall">Videos</a>
+							<div class="mx-auto dot"></div>
+						</div>
 					</div>
-					
-					<div class="d-flex flex-column align-items-center py-1">
-						<a class="subMenuItem" href="#" id="opedButtonSmall">Op-Eds</a>
-						<a class="subMenuItem" href="#" id="videoButtonSmall">Videos</a>
-						<a class="subMenuItem" href="#" id="blogButtonSmall">Blogs</a>
-					</div>		
-								
-					<div>
-						<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
-					</div>
-
-				</div>
-								
-				<div class="d-flex justify-content-center py-2">
-					<div class="socialMediaButtons">
-						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
-					</div>
+				</div>		
+				
+				<div class="fadeInGroup">
+					<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+					<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-2"></i></a>
+					<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 				</div>	
 			</div>
 		</div>
 
-		<!-- Left-hand Navigation Header -->
-		<div class="container-fluid p-0">				
-			<div class="col-md-6 h-100 px-0 d-none d-md-block position-fixed" style="min-height:550px;">
-				<div class="h-100 p-3 orangeBackground">
-					<div class="mx-auto h-100 d-flex flex-column justify-content-between p-3 menuBorder" style="width: 85%;">
+		<!-- Left-hand Navigation -->
+		<div class="container-fluid p-0">		
+			<div class="col-lg-6 h-100 px-0 d-none d-md-block position-fixed" id="leftHandNavigation">
+						
+				<div class="h-100 p-2 orangeBackground">
+					<div class="mx-auto h-100 d-flex flex-column justify-content-between px-5">
 					
-						<div class="d-none d-md-block">
-							<div class="pt-3 d-flex align-items-start">
-								<a href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
-								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
-									<a class="menuItem flex-fill-lg " href="publications.html">Publications</a>
-									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
-									<a class="menuItem flex-fill-lg" href="research.html">Research</a>
-									<a class="menuSelected flex-fill-lg" href="media.html">Media</a>
-									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
-									<a class="menuItem flex-fill-lg" href="contact.html">Contact</a>
-								</div>
-							</div>
+						<div>
 						</div>
 						
-						<div class="d-flex flex-column align-items-center">
-						
+						<div class="d-flex flex-column align-items-center pt-3">
 							<div>
-								<h1>Media</h1>							
+								<h1><b>Media</b></h1>							
 							</div>
 								
-							<div>
-								<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
-							</div>
-							
-							<div class="d-flex flex-column align-items-center py-1">
+							<div class="d-flex flex-column align-items-center py-4">
+								<div class="mx-auto dot" style="margin-bottom: 2px"></div>
 								<a class="subMenuItem" href="#" id="opedButton">Op-Eds</a>
-								<a class="subMenuItem" href="#" id="videoButton">Videos</a>
 								<a class="subMenuItem" href="#" id="blogButton">Blogs</a>
-							</div>		
-							
-							<div>
-								<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+								<a class="subMenuItem" href="#" id="videoButton">Videos</a>
+								<div class="mx-auto dot"></div>
 							</div>
 						</div>
 						
-						<div></div>
-						
-						<div class="d-flex justify-content-center pb-2">
-							<div class=" socialMediaButtons ">
+						<div class="d-flex justify-content-center pb-1">
+							<div class="fadeInGroup">
 								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="	color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="	color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 							</div>	
 						</div>								
 					</div>
 				</div>
 			</div>
 		</div>
-	
-		<!-- Right-hand Content -->
-		<div class="container-fluid p-0" id="contentContainer">
-			<div class="row w-100 px-0 mx-0">
-				<div class="col-md-6 offset-md-6 p-md-5 pt-5">
-					
-					<div class="row" id="opedHeader">
-						<div class="col-md-12 pt-4 pb-4">
-							<h2 class="text-center">Op-Eds</h2>
-						</div>
-					</div>
-					
-					<!-- Blended Learning Corriculum -->
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<p style="font-size: 16px; color:grey;">APRIL 2019</p>
-							<p class="pb-3"><span class="emphasizedText">"No one wins in pipeline adventure"</span> with Anna Cooper Reed
-							in <a href="https://www.winnipegfreepress.com/" target="_blank" class="orange">The Winnipeg Free Press</a></p>
-							<a href="https://www.winnipegfreepress.com/opinion/analysis/no-one-wins-in-pipeline-adventure-508418722.html?fbclid=IwAR3mYE8AWrn1hxpq9HKIoiDGDv40qwL28Ijh5UkuWonhxZWqTHkUoQhZP_k#have-your-say" target="_blank" class="orange"><i class="fas fa-external-link-alt mr-2"></i>Source</a>	
-						</div>
-					</div>
-					
-					<div class="row" id="videoHeader">
-						<div class="col-md-12 pt-4 pb-4">
-							<h2 class="text-center">Videos</h2>
-						</div>
-					</div>	
-					
-					<div class="row">
-						<div class="col-md-12">
-							<p style="font-size: 16px; color:grey;">FEB 2018</p>
-							<span class="emphasizedText">“Romancing the PReP Package - CBRC - Gay Men's Health Summit”</span> on <a href="https://www.youtube.com/user/thegaymenchannel" target="_blank" class="orange">The Queer Network</a>
 
-							<div class="pt-3" style="background:url(../images/circleLoading.svg) center center no-repeat;">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A5PeMOIMvSk?" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
+				
+		<!--  Website navigation menu -->
+		<div class="offset-lg-6 col-lg-6 my-0 h-100 w-100 p-0 d-none d-lg-block position-fixed" style="min-height:325px; pointer-events: none !important; z-index:100;">
+			<div class="h-100 px-0" style="z-index:10; pointer-events: none;">
+				<div class="h-100" id="navBarMenu">
+					<div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+						<a class="menuItemLarge pb-1" href="../index.html">Home</a>
+						<a class="menuItemLarge pb-1" href="publications.html">Publications</a>
+						<a class="menuItemLarge py-1" href="presentations.html">Presentations</a>
+						<a class="menuItemLarge py-1" href="research.html">Research</a>
+						<a class="menuSelectedLarge py-1" href="media.html">Media</a>
+						<a class="menuItemLarge py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
+						<a class="menuItemLarge pt-1" href="contact.html">Contact</a>
 					</div>
-					
-					<div class="row pb-4 pt-5">
-						<div class="mx-auto dot"></div>
-					</div>
-					
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<p style="font-size: 16px; color:grey;">FEB 2018</p>
-							<span class="emphasizedText">“PReP - Increasing Sexual Freedom - Michael Montess”</span> on <a href="https://www.youtube.com/user/thegaymenchannel" target="_blank" class="orange">The Queer Network</a>
-
-							<div class="pt-3" style="background:url(../images/circleLoading.svg) center center no-repeat;">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A7bVUbs2Qrs?" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-					</div>			
-					
-					<div class="row py-4">
-						<!-- <div class="mx-auto line"></div> -->
-					</div>						
-					
-					<div class="row" id="blogHeader">
-						<div class="col-md-12 pt-4 pb-4">
-							<h2 class="text-center">Blogs</h2>
-						</div>
-					</div>
-					
-					<!-- Blended Learning Corriculum -->
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<p style="font-size: 16px; color:grey;">SEPT 2017</p>
-							<p class="pb-3"><span class="emphasizedText">“How to Solve the Moral Problem of Climate Change”</span> on <a href="https://brainwandering.wordpress.com/" target="_blank" class="orange">Brainwandering</a></p>
-							
-							<a href="https://brainwandering.wordpress.com/2017/09/07/how-to-solve-the-moral-problem-of-climate-change/" target="_blank" class="orange"><i class="fas fa-external-link-alt mr-2"></i>Source</a>	
-						</div>
-					</div>
-					
-					<div class="px-0 d-none d-md-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
 				</div>
 			</div>
+		</div>
+		
+		<!-- Right-hand Content -->
+		<div class="container-fluid p-0 position-absolute col-lg-6 offset-lg-6 content defaultBackground">
+			<div class="px-0 d-lg-block px-xl-4 pt-4 defaultBackground">
+
+				<div style="height: 50vh; margin-bottom:-175px; min-height:130px;" class="d-none d-lg-block">
+				</div>
+			
+				<div class="d-flex flex-column align-items-center justify-content-center px-lg-5">
+					<div class="col-lg-12 pb-5">
+					
+						<h2 id="opedHeader" class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; white-space: nowrap; font-weight:bold;">Op-Eds</h2>
+						
+						<!-- Blended Learning Corriculum -->
+						<div class="row pb-5">
+							<div class="col-md-12">
+								<p style="font-size: 16px; color:grey;">APRIL 2019</p>
+								<p class="pb-3"><span class="emphasizedText">"No one wins in pipeline adventure"</span> with Anna Cooper Reed
+								in <a href="https://www.winnipegfreepress.com/" target="_blank" class="orange">The Winnipeg Free Press</a></p>
+								<a href="https://www.winnipegfreepress.com/opinion/analysis/no-one-wins-in-pipeline-adventure-508418722.html?fbclid=IwAR3mYE8AWrn1hxpq9HKIoiDGDv40qwL28Ijh5UkuWonhxZWqTHkUoQhZP_k#have-your-say" target="_blank" class="orange"><i class="fas fa-external-link-alt mr-2"></i>Source</a>	
+							</div>
+						</div>
+			
+						<h2 id="blogHeader" class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; white-space: nowrap; font-weight:bold;">Blogs</h2>
+						
+						<!-- Blended Learning Corriculum -->
+						<div class="row pb-5">
+							<div class="col-md-12">
+								<p style="font-size: 16px; color:grey;">SEPT 2017</p>
+								<p class="pb-3"><span class="emphasizedText">“How to Solve the Moral Problem of Climate Change”</span> on <a href="https://brainwandering.wordpress.com/" target="_blank" class="orange">Brainwandering</a></p>
+								
+								<a href="https://brainwandering.wordpress.com/2017/09/07/how-to-solve-the-moral-problem-of-climate-change/" target="_blank" class="orange"><i class="fas fa-external-link-alt mr-2"></i>Source</a>	
+							</div>
+						</div>
+						
+						<h2 id="videoHeader" class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; white-space: nowrap; font-weight:bold;">Videos</h2>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<p style="font-size: 16px; color:grey;">FEB 2018</p>
+								<span class="emphasizedText">“Romancing the PReP Package - CBRC - Gay Men's Health Summit”</span> on <a href="https://www.youtube.com/user/thegaymenchannel" target="_blank" class="orange">The Queer Network</a>
+
+								<div class="pt-3" style="background:url(../images/circleLoading.svg) center center no-repeat;">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A5PeMOIMvSk?" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row pb-4 pt-5">
+							<div class="mx-auto dot"></div>
+						</div>
+						
+						<div class="row pb-5">
+							<div class="col-md-12">
+								<p style="font-size: 16px; color:grey;">FEB 2018</p>
+								<span class="emphasizedText">“PReP - Increasing Sexual Freedom - Michael Montess”</span> on <a href="https://www.youtube.com/user/thegaymenchannel" target="_blank" class="orange">The Queer Network</a>
+
+								<div class="pt-3" style="background:url(../images/circleLoading.svg) center center no-repeat;">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/A7bVUbs2Qrs?" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>		
+			</div>
+			
+			<div class="px-0 d-none d-lg-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
+		
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -220,19 +212,19 @@
 		$(document).ready(function(){
 			$("#blogButton, #blogButtonSmall").click(function() {
 			$('html,body').animate({
-				scrollTop: $("#blogHeader").offset().top},
+				scrollTop: $("#blogHeader").offset().top - 60},
 				'slow');
 			});
 
 			$("#videoButton, #videoButtonSmall").click(function() {
 			$('html,body').animate({
-				scrollTop: $("#videoHeader").offset().top},
+				scrollTop: $("#videoHeader").offset().top - 60},
 				'slow');
 			});
 			
 			$("#opedButton, #opedButtonSmall").click(function() {
 			$('html,body').animate({
-				scrollTop: $("#opedHeader").offset().top},
+				scrollTop: $("#opedHeader").offset().top - 60},
 				'slow');
 			});
 		});

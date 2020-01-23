@@ -3,33 +3,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
 		<title>Michael Montess - Publications</title>
-	    <meta charset="utf-8"/>
+	     <meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	</head>
 	
 	<body class="blueBackground">
-	
-		<!-- Mobile Navigation Bar -->	
-		<div class="d-md-none justify-content-end fixed-top p-2 blueBackground" style="display:flex;" id="navBar">
-			<div class="mr-auto pl-2">
-				<a href="../index.html" class="pr-3 logo">Michael Montess</a>
+		
+		<!-- Fixed Header -->
+		<div class="col-md-12 d-flex align-items-center justify-content-between py-1 fixed-top float-right">
+			<div class="float-left">
+				<a href="../index.html" class="logo">MM</a>
 			</div>
-			<div class="hamburger pr-2" id="hamburgerButton">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
+			<div class="float-right d-flex align-items-center hamburgerButton menuButton">
+				<strong>Menu</strong>
+				<div class="m-2">
+					<div class="hamburger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</div>
 			</div>
+		</div>
+
+		<!-- Mobile Navigation Bar Background-->	
+		<div class="d-flex align-items-center d-lg-none fixed-top p-2 blueBackground" id="navBarMobile">
 		</div>
 		
 		<!-- Mobile Navigation Bar Menu -->		
-		<div class="h-100 w-100 d-md-none position-fixed m-0" id="navBarMenu">
+		<div class="w-100 h-100 d-lg-none position-fixed m-0" id="navBarMenuMobile" style="z-index:9; min-height:375px;">
 			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-				<a class="menuSelected pb-1" href="../pages/publications.html">Publications</a>
+				<a class="menuItem pb-1" href="../index.html">Home</a>
+				<a class="menuSelected py-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
 				<a class="menuItem py-1" href="../pages/research.html">Research</a>
 				<a class="menuItem py-1" href="../pages/media.html">Media</a>
@@ -39,153 +50,193 @@
 		</div>	
 			
 		<!-- Mobile Header -->
-		<div class="d-md-none p-3 blueBackground mobileHeader" id="mobileHeader">
-			<div class="d-flex flex-column w-100 menuBorder justify-content-between">
-				<div></div>
+		<div class="d-lg-none pb-3 blueBackground" id="headerMobile" style="height: 95vh; min-height: 350px;">
+			<div class="d-flex flex-column w-100 h-100 justify-content-between align-items-center">
 				
-				<div class="d-flex flex-column align-items-center pt-4" id="header">
+				<div></div>
+					
+				<div class="pt-5">	
+					<h1><strong>Publications</strong></h1>	
 					<div>
-						<h1>Publications</h1>
-					</div>									
-
-					<div>
-						<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
-					</div>
+						<div class="d-flex flex-column align-items-center">
+							<div class="mx-auto dot" style="margin-bottom: 2px"></div>
+							<a class="subMenuItem" href="#" id="2019ButtonSmall">2019</a>
+							<a class="subMenuItem" href="#" id="2018ButtonSmall">2018</a>
+							<div class="mx-auto dot"></div>
+						</div>	
+					</div>						
 				</div>
-									
-				<div class="d-flex justify-content-center py-2">
-					<div class="socialMediaButtons">
-						<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-						<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-						<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
-					</div>
+				
+				<div class="fadeInGroup">
+					<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+					<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-2"></i></a>
+					<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 				</div>	
 			</div>
 		</div>
-		
-		<!-- Left-hand Navigation Header -->
-		<div class="container-fluid p-0">				
-			<div class="col-md-6 h-100 px-0 d-none d-md-block position-fixed" style="min-height:500px;">
-				<div class="h-100 p-3 blueBackground">
-					<div class="mx-auto h-100 d-flex flex-column justify-content-between p-3 menuBorder" style="width: 85%;">
+
+		<!-- Left Hand Navigation -->	
+		<div class="container-fluid p-0">		
+			<div class="col-lg-6 h-100 px-0 d-none d-md-block position-fixed" id="leftHandNavigation">
+			
+				<div class="h-100 p-2 blueBackground">
+					<div class="mx-auto h-100 d-flex flex-column justify-content-between">
 					
-						<div class="d-none d-md-block">
-							<div class="pt-3 d-flex align-items-start">
-								<a href="../index.html" class="d-flex justify-content-start flex-grow-1 pr-3 logo">Michael Montess</a>
-								<div class="d-flex justify-content-end flex-column flex-wrap pr-2" style="font-size: 18px; font-family:FF Super Grotesk; text-align: right;">	
-									<a class="menuSelected flex-fill-lg " href="publications.html">Publications</a>
-									<a class="menuItem flex-fill-lg" href="presentations.html">Presentations</a>
-									<a class="menuItem flex-fill-lg" href="research.html">Research</a>
-									<a class="menuItem flex-fill-lg" href="media.html">Media</a>
-									<a style="min-width:55px;" class="menuItem flex-fill-lg" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
-									<a class="menuItem flex-fill-lg" href="contact.html">Contact</a>
-								</div>
-							</div>
+						<div>
 						</div>
 						
-						<div class="d-flex flex-column align-items-center pb-5">
+						<div class="d-flex flex-column align-items-center">
 							<div>
-								<h1>Publications</h1>							
+								<h1><strong>Publications</strong></h1>							
 							</div>
 							
-							<div>
-								<img src="../images/ornament.png" style="width:100px" alt="Ornament"/>
+							<div class="d-flex flex-column align-items-center py-4">
+								<div class="mx-auto dot" style="margin-bottom: 2px"></div>
+								<a class="subMenuItem" href="#" id="2019Button">2019</a>
+								<a class="subMenuItem" href="#" id="2018Button">2018</a>
+								<div class="mx-auto dot"></div>
 							</div>
 						</div>
 						
-						<div class="d-flex justify-content-center pb-2 pt-5">
-							<div class=" socialMediaButtons ">
+						<div class="d-flex justify-content-center pb-1">
+							<div class="fadeInGroup">
 								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
 								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
 								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
 							</div>	
-						</div>								
+						</div>									
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--  Large navigation menu -->
+		<div class="offset-lg-6 col-lg-6 my-0 h-100 w-100 p-0 d-none d-lg-block position-fixed" style="min-height:325px; pointer-events: none !important; z-index:100;">
+			<div class="h-100 px-0" style="z-index:10; pointer-events: none;">
+				<div class="h-100" id="navBarMenu">
+					<div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+						<a class="menuItemLarge pb-1" href="../index.html">Home</a>
+						<a class="menuSelectedLarge py-1" href="publications.html">Publications</a>
+						<a class="menuItemLarge py-1" href="presentations.html">Presentations</a>
+						<a class="menuItemLarge py-1" href="research.html">Research</a>
+						<a class="menuItemLarge py-1" href="media.html">Media</a>
+						<a class="menuItemLarge py-1" href="../cv/Michael_Montess_CV.pdf" download>CV<i class="fas fa-file-download ml-1"></i></a>
+						<a class="menuItemLarge pt-1" href="contact.html">Contact</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		
 		<!-- Right-hand Content -->
-		<div class="container-fluid p-0" id="contentContainer">
-			<div class="row w-100 px-0 mx-0">
-				<div class="col-md-6 offset-md-6 p-md-5 pt-5 pb-4">
+		<div class="container-fluid p-0 position-absolute col-lg-6 offset-lg-6 content defaultBackground">
+			<div class="px-0 d-lg-block px-xl-4 pt-4 defaultBackground">
+			
+				<div style="height: 50vh; margin-bottom:-170px; min-height:130px;" class="d-none d-lg-block">
+				</div>
+				
+				<div class="d-flex flex-column align-items-center justify-content-center px-lg-5">
+					<div class="col-lg-12 pb-5">
+					
+						<h2 class="pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; white-space: nowrap; font-weight:bold;" id="2019Header">2019</h2>
+					
+						<div class="row">
+							<div class="col-md-12">
+								<p class="pb-3">
+									Montess, Michael. (2019). “Canada’s Carbon Tax and the TMX Controversy: 
+									A Case Study”. Ethics, Policy and Environment, 22(2), 138–141.
+								</p>
+									
+								<a href="https://www.tandfonline.com/doi/abs/10.1080/21550085.2019.1625537?journalCode=cepe21" target="_blank" class="blue source"><i class="fas fa-external-link-alt mr-2"></i>Source</a>
+							</div>
+						</div>
+						
+						<div class="row py-4">
+							<div class="mx-auto dot"></div>
+						</div>
+					
+						<div class="row pb-4">
+							<div class="col-md-12">
+								<p class="pb-3">
+									A. Andrew D. Eaton , Soo Chan Carusone, Shelley L. Craig, Erin Telegdi, John W. McCullagh, 
+									David McClure, Walter Wilson, Leonardo Zuniga, Kevin Berney, Galo F. Ginocchio, 
+									Gordon A. Wells, <strong>Michael Montess</strong>, Adam Busch, Nick Boyce, Carol Strike, 
+									Ann Stewart. (2019). “The ART of conversation: Feasibility and acceptability of a pilot
+									peer intervention to help complex HIV-positive people transition from hospital to 
+										community”. BMJ Open.
+								</p>
+									
+								<a href="https://bmjopen.bmj.com/content/9/3/e026674" target="_blank" class="blue source"><i class="fas fa-external-link-alt mr-2"></i>Source</a>
+							</div>
+						</div>
+								
+						<h2 class=" pb-3 pt-4 text-center text-lg-left" style="line-height: 1.0; text-align:center; text-align:left; !important; white-space: nowrap; font-weight:bold;" id="2018Header">2018</h2>
+								
+						<!-- Blended Learning Corriculum -->
+						<div class="row">
+							<div class="col-md-12">
+								<p class="pb-3">
+									Andrew D. Eaton, Francisco Ibáñez-Carrasco, Shelley L. Craig, Soo Chan Carusone, <strong>Michael
+									Montess</strong>, Gordon A. Wells & Galo F. Ginocchio. (2018). “A Blended Learning Curriculum for
+									Training Peer Researchers to Conduct Community-Based Participatory Research”. Action
+									Learning: Research and Practice.
+								</p>
+											
+								<a href="https://www.tandfonline.com/doi/abs/10.1080/14767333.2018.1462143?journalCode=calr20" target="_blank" class="blue source"><i class="fas fa-external-link-alt mr-2"></i>Source</a>
+											
+								<div class="rotateIcon mt-2">
+									<a class="collapsed blue" data-toggle="collapse" href="#blendedLearning" aria-expanded="true" aria-controls="blendedLearning">
+										<i class="fas fa-angle-down mr-2" style="font-size:1.5em; position:relative; top:5px;"></i><strong>Abstract</strong>
+									</a>
 
-					<div class="row">
-						<div class="col-md-12 py-4">
-							<h2 class="text-center">2019</h2>
-						</div>
-					</div>
-					
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<p class="pb-3">
-								A. Andrew D. Eaton , Soo Chan Carusone, Shelley L. Craig, Erin Telegdi, John W. McCullagh, David McClure, 
-								Walter Wilson, Leonardo Zuniga, Kevin Berney, Galo F. Ginocchio, Gordon A. Wells, <b>Michael Montess</b>, 
-								Adam Busch, Nick Boyce, Carol Strike, Ann Stewart. (2019). “The ART of conversation: 
-								Feasibility and acceptability of a pilot peer intervention to help complex HIV-positive people 
-								transition from hospital to community”. BMJ Open.
-							</p>
-								
-							<a href="https://bmjopen.bmj.com/content/9/3/e026674" target="_blank" class="blue"><i class="fas fa-external-link-alt mr-2"></i>Source</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-md-12 py-4">
-							<h2 class="text-center">2018</h2>
-						</div>
-					</div>
-					
-					<!-- Blended Learning Corriculum -->
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<p class="pb-3">
-								Andrew D. Eaton, Francisco Ibáñez-Carrasco, Shelley L. Craig, Soo Chan Carusone, <b>Michael
-								Montess</b>, Gordon A. Wells & Galo F. Ginocchio. (2018). “A Blended Learning Curriculum for
-								Training Peer Researchers to Conduct Community-Based Participatory Research”. Action
-								Learning: Research and Practice.
-							</p>
-								
-							<a href="https://www.tandfonline.com/doi/abs/10.1080/14767333.2018.1462143?journalCode=calr20" target="_blank" class="blue"><i class="fas fa-external-link-alt mr-2"></i>Source</a>
-								
-							<div class="rotateIcon mt-2">
-								<a class="collapsed" data-toggle="collapse" href="#blendedLearning" aria-expanded="true" aria-controls="blendedLearning" style="text-decoration:none; color:black;">
-									<i class="fas fa-angle-down mr-2 blue" style="font-size:1.5em; position:relative; top:5px;"></i>Abstract
-								</a>
-
-								<div id="blendedLearning" class="collapse">
-									<div class="card card-body mt-3">
-										<p>Peer researchers (PRs) are research team members who share traits (e.g. gender, age, sexual
-										orientation, diagnosis, income, housing situation, etc.) with study participants. Participatory
-										methods and some fields (e.g. HIV/AIDS) expect PRs to be equitably involved in a project.
-										Moreover, in Canada, there is a current impetus to include ‘the patient’ in health research. PRs
-										often join a project without any formal research training, yet they are frequently tasked with
-										suggesting appropriate language, recruiting participants, conducting interviews, administering
-										surveys, analyzing data, and presenting findings.</p><br>
-										
-										<p>While there is literature on PR hiring, ethical
-										considerations of PR engagement, and PR experiences, the methods of training PRs remain
-										underreported. A blended learning curriculum (i.e. combination of webinars, didactic in-person
-										presentation, filmed simulation, etc.), informed by the principles of action learning and the
-										concept of reciprocity, has shown preliminary effectiveness in training PRs across two studies.
-										This paper will present the curriculum, alongside exploratory evaluation results (n = 7), with
-										details on how the curriculum changed from one study to the next and how reciprocity between
-										academic and peer researchers led to stronger collaborations.</p>
+									<div id="blendedLearning" class="collapse">
+										<div class="card card-body mt-3">
+											<p>Peer researchers (PRs) are research team members who share traits (e.g. gender, age, sexual
+											orientation, diagnosis, income, housing situation, etc.) with study participants. Participatory
+											methods and some fields (e.g. HIV/AIDS) expect PRs to be equitably involved in a project.
+											Moreover, in Canada, there is a current impetus to include ‘the patient’ in health research. PRs
+											often join a project without any formal research training, yet they are frequently tasked with
+											suggesting appropriate language, recruiting participants, conducting interviews, administering
+											surveys, analyzing data, and presenting findings.</p><br>
+													
+											<p>While there is literature on PR hiring, ethical
+											considerations of PR engagement, and PR experiences, the methods of training PRs remain
+											underreported. A blended learning curriculum (i.e. combination of webinars, didactic in-person
+											presentation, filmed simulation, etc.), informed by the principles of action learning and the
+											concept of reciprocity, has shown preliminary effectiveness in training PRs across two studies.
+											This paper will present the curriculum, alongside exploratory evaluation results (n = 7), with
+											details on how the curriculum changed from one study to the next and how reciprocity between
+											academic and peer researchers led to stronger collaborations.</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+						
+						<div class="px-0 d-none d-lg-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
 					
-					<div class="px-0 d-none d-md-block" style="z-index: 1; position: fixed; width:100%; bottom: -5px; height:100px; background: linear-gradient(to bottom, rgba(255,252,246,0) 0%,rgba(255,252,246,1) 70%,rgba(255,252,246,1) 100%);pointer-events: none;"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-
+		
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
 		<script src="../javascript/main.js"></script>
-	
+		
+		<script>
+			$(document).ready(function(){
+				$("#2019Button, #2019ButtonSmall").click(function() {
+				$('html,body').animate({
+					scrollTop: $("#2019Header").offset().top - 60},
+					'slow');
+				});
+
+				$("#2018Button, #2018ButtonSmall").click(function() {
+				$('html,body').animate({
+					scrollTop: $("#2018Header").offset().top - 60},
+					'slow');
+				});
+			});
+		</script>
 	</body>	
 </html>		
