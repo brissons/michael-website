@@ -46,13 +46,14 @@
 
 html, body {
 	font-family:  Spectral, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !important;
-	font-size: 22px;
+	font-size: 20px;
 	min-height: 100% !important;
 	height: 100%;
 }
 
 h1,h2,h5 {
 	font-family: FF Super Grotesk, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !important;
+	font-weight: normal;
 }
 
 p {
@@ -123,7 +124,6 @@ p {
 .logo {
 	color: black; 
 	text-decoration:none; 
-	font-weight:bold;
 	font-family: FF Super Grotesk, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !important;
 	position: relative;
 	padding-bottom:0px;
@@ -146,28 +146,6 @@ p {
 
 .menuItem:hover {
 	color: black;
-}
-
-.menuItemLarge {
-	font-family: FF Super Grotesk, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !important;
-	font-size: 26px;
-	color:black;
-}
-
-.menuItemLarge:hover {
-	color: black;
-}
-
-.menuSelectedLarge {
-	font-family: FF Super Grotesk, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !important;
-	font-size: 26px;
-	color:black;
-	font-weight: bold;
-	text-decoration:none;
-}
-
-.menuSelectedLarge:hover {
-	color:black;
 }
 
 .menuSelected {
