@@ -1,4 +1,13 @@
 # michael-website
-A simple, personal website for my partner Michael. Created using HTML, CSS and Javascript, while relying heavily on Bootstrap. 
+
+> A simple, personal website for Michael Montess.
+
+The application is hosted on [Hostinger](https://www.hostinger.com/), and can be accessed [here](https://michaelmontess.com/).
 
 Mobile friendly.
+
+## Built with
+* [Bootstrap](https://getbootstrap.com/) - Responsive Grid System
+* HTML
+* CSS
+* Javascript
