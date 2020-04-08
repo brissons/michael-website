@@ -195,11 +195,9 @@ p {
 
 #mobileNavBarMenu {
 	 z-index:9; 
-	 min-height:375px;
+	 min-height:325px;
 	 display:none; 
 	 background-color: #fffcf6; 
-	 top:55px;
-	 padding-bottom:55px;
 	 opacity: 0.95;
 }
 
