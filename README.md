@@ -1,3 +1,8 @@
+<p align="center"> 
+  <img src="michael-ex.gif">
+</p>
+
+
 # michael-website
 
 > A simple, personal website for Michael Montess.
