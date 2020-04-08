@@ -1,21 +1,21 @@
 @media (min-width: 1px) {
 	h1 {
 		text-align: center;
-		font-size:45px !important;
+		font-size:40px !important;
 	} 
 	h2 {
-		font-size:35px !important;
+		font-size:30px !important;
 	}
 }
 
 @media (min-width: 480px) { 
 	h1 {
 		text-align: center;
-		font-size:45px !important;
+		font-size:40px !important;
 	} 
 	
 	h2 {
-		font-size:35px !important;	
+		font-size:30px !important;	
 	}
 }
 
@@ -111,8 +111,19 @@ p {
 	/* font-weight:bold; */
 }
 
-#headerMobile {
+#mobileHeader {
 	top: 50px;
+	height: 92vh; 
+	min-height: 350px;
+}
+
+#mobileImage {
+	height:200px; 
+	width: 200px;
+}
+
+#webImage {
+	max-height:250px;
 }
 
 #header {
@@ -171,13 +182,20 @@ p {
 }
 
 
-#navBarMobile {
+#navBarWebContainer {
+	min-height:350px; 
+	pointer-events: none !important; 
+	z-index:100;
+}	
+
+#mobileNavBarBackground {
 	z-index: 4; 
 	height:55px; 
 }
 
-#navBarMenuMobile {
-	 z-index: 3; 
+#mobileNavBarMenu {
+	 z-index:9; 
+	 min-height:375px;
 	 display:none; 
 	 background-color: #fffcf6; 
 	 top:55px;

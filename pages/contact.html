@@ -16,7 +16,7 @@
 	<body class="defaultBackground">
 		
 		<!-- Fixed Header -->
-		<div class="col-md-12 d-flex align-items-center justify-content-between py-1 fixed-top float-right">
+		<div class="col-md-12 d-flex align-items-center justify-content-between py-1 fixed-top">
 			<div class="float-left">
 				<a href="../index.html" class="logo">MM</a>
 			</div>
@@ -33,12 +33,12 @@
 		</div>
 		
 		<!-- Mobile Navigation Bar Background-->	
-		<div class="d-flex align-items-center d-lg-none fixed-top p-2 defaultBackground" id="navBarMobile">
+		<div class="d-flex align-items-center d-lg-none fixed-top p-2 defaultBackground" id="mobileNavBarBackground">
 		</div>
 		
 		<!-- Mobile Navigation Bar Menu -->
-		<div class="w-100 h-100 d-lg-none position-fixed m-0" id="navBarMenuMobile" style="z-index:9; min-height:300px;">
-			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center" style="margin-top:-28px;">
+		<div class="w-100 h-100 d-lg-none position-fixed m-0" id="mobileNavBarMenu">
+			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
 				<a class="menuItem pb-1" href="../index.html">Home</a>
 				<a class="menuItem pb-1" href="../pages/publications.html">Publications</a>
 				<a class="menuItem py-1" href="../pages/presentations.html">Presentations</a>
@@ -50,17 +50,16 @@
 		</div>	
 
 		<!-- Mobile Header -->
-		<div class="d-lg-none pb-3 defaultBackground" id="headerMobile" style="height: 92vh;min-height:475px;">
+		<div class="d-lg-none pb-3 defaultBackground" id="mobileHeader" style="min-height:450px;">
 			<div class="d-flex flex-column w-100 h-100 justify-content-between align-items-center">
 				
-				<div class="mt-5"></div>
+				<div class="py-3"></div>
 				
-				<div  style="height:275px; width: 275px;" class="pb-5 text-center">
-					<div class="text-center" style="font-size:45px; line-height:1.1">Contact</div>
-					<img id="michaelStairs" class="rounded-circle img-fluid mx-auto img-center p-3" src="../images/michaelStairs.jpg" alt="Michael Canoe">
+				<div class="pt-5 text-center">
+					<h1 class="text-center">Contact</h1>
+					<img class="rounded-circle img-fluid" id="mobileImage" src="../images/michaelStairs.jpg" alt="Michael Canoe">
 				</div>
 			
-
 				<div class="fadeInGroup pt-5">
 					<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
 					<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-2"></i></a>
@@ -69,43 +68,32 @@
 			</div>
 		</div>
 		
-		<!-- Left-hand Navigation Menu -->
+		<!-- Web Left-hand -->
 		<div class="container-fluid p-0">
-			<div class="col-md-6 h-100 px-0 d-none d-lg-block position-fixed" id="leftHandNavigation">
+			<div class="col-lg-6 h-100 px-0 d-none d-lg-block position-fixed">
 				<div class="h-100 p-2 defaultBackground">
-					<div class="mx-auto h-100 d-flex flex-column justify-content-between">
+					<div class="mx-auto h-100 d-flex flex-column justify-content-between align-items-center">
 
-						<div></div>
+						<div class="pb-3"></div>
 					
-						<div style="padding-top: 3rem;">
-							<h1 style="white-space: nowrap;">Contact</h1>
-							
-							<div>
-								<div class="d-flex flex-column align-items-center justify-content-center p-2">
-									<div class="d-flex flex-column align-items-center justify-content-center pb-md-4">
-										<img class="rounded-circle img-fluid" style="max-height:250px" src="../images/michaelStairs.jpg" alt="Michael Canoe">
-									</div>
-								</div>
-							</div>						
+						<div class="text-center">
+							<h1>Contact</h1>
+							<img class="rounded-circle img-fluid mt-2" id="webImage" src="../images/michaelStairs.jpg" alt="Michael Canoe">					
 						</div>
-
-											
-						<div class="d-flex justify-content-center pb-1">
-							<div class="fadeInGroup">
-								<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
-								<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
-								<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
-							</div>	
-						</div>	
+	
+						<div class="fadeInGroup">
+							<a target="_blank" aria-label="Facebook" href="https://www.facebook.com/mmmontess" style="color:black;"><i class="fab fa-facebook fa-md"></i></a>
+							<a target="_blank" aria-label="Instagram" href="https://www.instagram.com/mmmontess/?hl=en" style="color:black;"><i class="fab fa-instagram fa-md px-1"></i></a>
+							<a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-montess-7224a475/" style="color:black;"><i class="fab fa-linkedin fa-md"></i></a>
+						</div>		
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		
-		<!--  Website navigation menu -->
-		<div class="offset-md-6 col-md-6 my-0 h-100 w-100 p-0 d-none d-lg-block position-fixed" style="min-height:350px; pointer-events: none !important; z-index:2;">
-			<div class="h-100 px-0" style="z-index:10000; pointer-events: none;">
+		<!--  Web Navigation Menu -->
+		<div class="offset-md-6 col-md-6 my-0 h-100 w-100 p-0 d-none d-lg-block position-fixed" id="navBarWebContainer">
+			<div class="h-100 px-0">
 				<div class="h-100" id="navBarMenu" style="background-color: #d6bbbb ;">
 					<div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center">
 						<a class="menuItem pb-1" href="../index.html">Home</a>
@@ -120,19 +108,16 @@
 			</div>
 		</div>
 		
-		<!-- Right-hand Content -->
-		<div class="container-fluid p-0 position-absolute col-lg-6 offset-lg-6 content" style="background-color: #E9DBDB">
+		<!-- Content -->
+		<div class="container-fluid p-0 position-absolute col-lg-6 offset-lg-6 content" style="background-color: #e9dbdb">
 			<div class="px-0 d-lg-block px-xl-4 pt-5 pt-lg-4" style="background-color: #E9DBDB">
 				
-				
-				<div style="height: 50vh; margin-bottom:-180px; min-height:270px;" class="d-none d-lg-block">
+				<div style="height: 50vh; margin-bottom:-120px;" class="d-none d-lg-block">
 				</div>
 
-				<div class="d-flex flex-column align-items-center justify-content-center px-lg-5" style="background-color:#E9DBDB;">
+				<div class="d-flex flex-column align-items-center justify-content-center px-3 px-sm-5" style="background-color:#E9DBDB;">
 					<div class="col-lg-12 pb-5">
 
-						<h2 id="details" class="pb-2 text-center text-lg-left" style="line-height: 1.0; text-align:center; font-size: 35px !important;">Details</h2>
-			
 						<p>
 							mmontess@yorku.ca<br>
 							Department of Philosophy<br>
@@ -152,16 +137,5 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
 		<script src="../javascript/main.js"></script>	
-	
-		<script>
-			$(document).ready(function(){
-				$("#michaelStairs").click(function() {
-				$('html,body').animate({
-					scrollTop: $("#details").offset().top - 70},
-					'slow');
-				});
-			});
-		</script>
-		
 	</body>
 </html>		
