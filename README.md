@@ -11,6 +11,8 @@ The application is hosted on [Hostinger](https://www.hostinger.com/), and can be
 
 Mobile friendly.
 
+An excuse to get better aquainted with HTML and CSS.
+
 ## Built with
 * [Bootstrap](https://getbootstrap.com/) - Responsive Grid System
 * HTML
