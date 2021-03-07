@@ -230,6 +230,14 @@ p {
 /* Colors
 /* 
 /* */
+.brown {
+	color: #964B00;
+}
+
+.brown:hover {
+	color: #964B00;
+}
+
 .purple {
 	color: #6b437a;
 }
